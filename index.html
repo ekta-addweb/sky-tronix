@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Sky Tronix</title>
+      <!-- Favicons -->
+      <link rel="icon" href="assets/images/favicon.svg">
+      <!-- build:css -->
+      <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
+      <!-- endbuild -->
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!--work sans font link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--font Awesome link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- Swiper CSS -->
+   </head>
+   <body>
+      <header> 
+         <!--first header start-->
+         <div class="first-header-section">
+            <div class="container-xxl heading-wrapper">
+               <div class="row d-flex justify-content-between flex-wrap gap-3">
+                  <div class="col-md-4">
+                     <p class="description-two text-light ms-2"><i class="fa-solid fa-check"></i> Free shipping on all orders over $50</p>
+                  </div>
+                  <div class="col-md-6 me-3">
+                     <ul class="d-flex gap-3 justify-content-end">
+                        <li><a href="#"><img src="assets/images/face-book-icon.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="assets/images/insta-icon.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="assets/images/twitter-icon.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="assets/images/linkedln-icon.svg" alt="linkedln"></a></li>
+                        <li><a href="#"><img src="assets/images/youtube-icon.svg" alt="youtube"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--first header end--> 
+
+         <!--second header start-->
+         <div class="second-header-section">
+            <div class="container-xxl heading-wrapper">
+                 <!-- Desktop layout -->
+                  <div class="d-none d-md-flex justify-content-between align-items-center">
+
+                     <!-- Logo -->
+                     <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="logo" width="140px" height="54px">
+                     </a>  
+
+                     <!-- Search Bar with icon -->
+                     <div class="search-bar">
+                        <div class="input-group">
+                           <span class="input-group-text bg-white border-end-0 pe-0">
+                              <img src="assets/images/search-icon.svg" alt="search">
+                           </span>
+                           <input type="text" class="form-control border-start-0 shadow-none" placeholder="Search...">
+                        </div>
+                     </div>
+ 
+                     <!-- Icons -->
+                     <div class="d-flex align-items-center icons">
+                        <button class="icon-btn border-0"><img src="assets/images/heart-icon.svg" alt="heart-image"></button>
+                        <button class="icon-btn border-0 shooping-cart">
+                           <img src="assets/images/shopping-cart-icon.svg" alt="shopping-cart">
+                           <img src="assets/images/shopping-count-icon.svg" alt="shopping-count-icon" class="shopping-count-icon">
+                        </button>
+                        <button class="icon-btn border-0"><img src="assets/images/person-icon.svg" alt="person-icon"></button>
+                     </div>
+                  </div>   
+
+                  <!-- Mobile layout -->
+                  <div class="d-md-none">
+                     <div class="d-flex justify-content-between align-items-center mb-3">
+
+                     <!-- Logo -->
+                     <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="logo" width="140px" height="54px">
+                     </a>  
+
+                     <!-- Icons -->
+                     <div class="d-flex align-items-center icons">
+                        <button class="icon-btn border-0"><img src="assets/images/heart-icon.svg" alt="heart-image"></button>
+                        <button class="icon-btn border-0 shooping-cart">
+                           <img src="assets/images/shopping-cart-icon.svg" alt="shopping-cart">
+                           <img src="assets/images/shopping-count-icon.svg" alt="shopping-count-icon" class="shopping-count-icon">
+                        </button>
+                        <button class="icon-btn border-0"><img src="assets/images/person-icon.svg" alt="person-icon"></button>
+                        </div>
+                     </div>   
+
+                     <!-- Full-width search bar with icon -->
+                     <div class="search-bar m-auto w-100">
+                        <div class="input-group">
+                           <span class="input-group-text bg-white pt-2 pe-2 border-end-0"><img src="assets/images/search-icon.svg" alt="search"></span>
+                           <input type="text" class="form-control border-start-0 ps-0" placeholder="Search...">
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>   
+         <!--second header end-->   
+         
+         <!--third header start-->
+         <nav class="navbar third-header-section navbar-expand-lg bg-white p-0">
+            <div class="container-xxl">
+               <!--Button-->
+               <button class="btn btn-outline-secondary category-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span>All Categories</span>
+               </button>
+
+               <!--Navigation Menu -->
+               <div class="collapse navbar-collapse" id="mainNavbar">
+                  <ul class="navbar-nav ms-auto mt-3 mt-lg-0 d-flex align-items-center">
+                     <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item description-two" href="#">FAQ</a></li>
+                           <li><a class="dropdown-item description-two" href="#">Contact</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <!--third header end-->
+      </header>
+
+      <main>
+         <!-- Hero Section with Swiper start -->
+         <div class="hero-section swiper myHeroSwiper">
+            <div class="swiper-wrapper">
+
+               <!--slide-1-->
+               <div class="swiper-slide">
+                  <div class="container-xxl">
+                  <div class="row hero-row align-items-center">
+                     <div class="col-md-6">
+                        <h1 class="heading-one">
+                        Drone <span class="text-color">skydive</span> made simple!
+                        </h1>
+                        <a href="#" type="button" class="btn btn-info">
+                        Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+
+                        <div class="dron-details mt-5">
+                        <div class="dron-details-row d-flex justify-content-between flex-wrap">
+                           <div class="flight-time col-md-3">
+                              <img src="assets/images/flight-time-icon.svg" width="60" height="60" class="mb-3" alt="Flight Time">
+                              <h6 class="product-title mb-2">Flight Time</h6>
+                              <p class="description-one">45 Mins</p>
+                           </div>
+                           <div class="speed col-md-4">
+                              <img src="assets/images/speed-icon.svg" width="60" height="60" class="mb-3" alt="Speed">
+                              <h6 class="product-title mb-2">Highest Speed</h6>
+                              <p class="description-one">72 Km/Hr</p>
+                           </div>
+                           <div class="sensors col-md-3">
+                              <img src="assets/images/sensor-icon.svg" width="60" height="60" class="mb-3" alt="Sensors">
+                              <h6 class="product-title mb-2">Sensors</h6>
+                              <p class="description-one">30m - 40m</p>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+
+                     <div class="hero-image-wrapper col-md-6 position-relative">
+                        <img src="assets/images/hero-dron-image.svg" class="main-drone-image d-block mx-lg-auto img-fluid" alt="Drone" width="700" height="500">
+                        <img src="assets/images/FLY.svg" class="fly-image position-absolute" alt="Fly">
+                        <img src="assets/images/HIGH.svg" class="high-image position-absolute" alt="High">
+                        <img src="assets/images/hero-Discount.svg" class="discount-image position-absolute" alt="Discount">
+                     </div>
+                  </div>
+                  </div>
+               </div>
+
+               <!--slide-2-->
+               <div class="swiper-slide">
+                  <div class="container-xxl">
+                  <div class="row hero-row align-items-center">
+
+                     <div class="col-md-6">
+                        <h1 class="heading-one">
+                        Drone <span class="text-color">skydive</span> made simple!
+                        </h1>
+                        <a href="#" type="button" class="btn btn-info">
+                        Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+
+                        <div class="dron-details mt-5">
+                        <div class="dron-details-row d-flex justify-content-between flex-wrap">
+                           <div class="flight-time col-md-3">
+                              <img src="assets/images/flight-time-icon.svg" width="60" height="60" class="mb-3" alt="Flight Time">
+                              <h6 class="product-title mb-2">Flight Time</h6>
+                              <p class="description-one">45 Mins</p>
+                           </div>
+                           <div class="speed col-md-4">
+                              <img src="assets/images/speed-icon.svg" width="60" height="60" class="mb-3" alt="Speed">
+                              <h6 class="product-title mb-2">Highest Speed</h6>
+                              <p class="description-one">72 Km/Hr</p>
+                           </div>
+                           <div class="sensors col-md-3">
+                              <img src="assets/images/sensor-icon.svg" width="60" height="60" class="mb-3" alt="Sensors">
+                              <h6 class="product-title mb-2">Sensors</h6>
+                              <p class="description-one">30m - 40m</p>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+
+                     <div class="hero-image-wrapper col-md-6 position-relative">
+                        <img src="assets/images/hero-dron-image.svg" class="main-drone-image d-block mx-lg-auto img-fluid" alt="Drone" width="700" height="500">
+                        <img src="assets/images/FLY.svg" class="fly-image position-absolute" alt="Fly">
+                        <img src="assets/images/HIGH.svg" class="high-image position-absolute" alt="High">
+                        <img src="assets/images/hero-Discount.svg" class="discount-image position-absolute" alt="Discount">
+                     </div>
+                  </div>
+                  </div>
+               </div>
+
+               <!--slide-3-->
+               <div class="swiper-slide">
+                  <div class="container-xxl">
+                  <div class="row hero-row align-items-center">
+                     <div class="col-md-6">
+                        <h1 class="heading-one">
+                        Drone <span class="text-color">skydive</span> made simple!
+                        </h1>
+                        <a href="#" type="button" class="btn btn-info">
+                        Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+
+                        <div class="dron-details mt-5">
+                        <div class="dron-details-row d-flex justify-content-between flex-wrap">
+                           <div class="flight-time col-md-3">
+                              <img src="assets/images/flight-time-icon.svg" width="60" height="60" class="mb-3" alt="Flight Time">
+                              <h6 class="product-title mb-2">Flight Time</h6>
+                              <p class="description-one">45 Mins</p>
+                           </div>
+                           <div class="speed col-md-4">
+                              <img src="assets/images/speed-icon.svg" width="60" height="60" class="mb-3" alt="Speed">
+                              <h6 class="product-title mb-2">Highest Speed</h6>
+                              <p class="description-one">72 Km/Hr</p>
+                           </div>
+                           <div class="sensors col-md-3">
+                              <img src="assets/images/sensor-icon.svg" width="60" height="60" class="mb-3" alt="Sensors">
+                              <h6 class="product-title mb-2">Sensors</h6>
+                              <p class="description-one">30m - 40m</p>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+
+                     <div class="hero-image-wrapper col-md-6 position-relative">
+                        <img src="assets/images/hero-dron-image.svg" class="main-drone-image d-block mx-lg-auto img-fluid" alt="Drone" width="700" height="500">
+                        <img src="assets/images/FLY.svg" class="fly-image position-absolute" alt="Fly">
+                        <img src="assets/images/HIGH.svg" class="high-image position-absolute" alt="High">
+                        <img src="assets/images/hero-Discount.svg" class="discount-image position-absolute" alt="Discount">
+                     </div>
+
+                  </div>
+                  </div>
+               </div>
+
+               <!--slide-4-->
+               <div class="swiper-slide">
+                 <div class="container-xxl">
+                  <div class="row hero-row align-items-center">
+                     <div class="col-md-6">
+                        <h1 class="heading-one">
+                        Drone <span class="text-color">skydive</span> made simple!
+                        </h1>
+                        <a href="#" type="button" class="btn btn-info">
+                        Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+
+                        <div class="dron-details mt-5">
+                        <div class="dron-details-row d-flex justify-content-between flex-wrap">
+                           <div class="flight-time col-md-3">
+                              <img src="assets/images/flight-time-icon.svg" width="60" height="60" class="mb-3" alt="Flight Time">
+                              <h6 class="product-title mb-2">Flight Time</h6>
+                              <p class="description-one">45 Mins</p>
+                           </div>
+                           <div class="speed col-md-4">
+                              <img src="assets/images/speed-icon.svg" width="60" height="60" class="mb-3" alt="Speed">
+                              <h6 class="product-title mb-2">Highest Speed</h6>
+                              <p class="description-one">72 Km/Hr</p>
+                           </div>
+                           <div class="sensors col-md-3">
+                              <img src="assets/images/sensor-icon.svg" width="60" height="60" class="mb-3" alt="Sensors">
+                              <h6 class="product-title mb-2">Sensors</h6>
+                              <p class="description-one">30m - 40m</p>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+
+                     <div class="hero-image-wrapper col-md-6 position-relative">
+                        <img src="assets/images/hero-dron-image.svg" class="main-drone-image d-block mx-lg-auto img-fluid" alt="Drone" width="700" height="500">
+                        <img src="assets/images/FLY.svg" class="fly-image position-absolute" alt="Fly">
+                        <img src="assets/images/HIGH.svg" class="high-image position-absolute" alt="High">
+                        <img src="assets/images/hero-Discount.svg" class="discount-image position-absolute" alt="Discount">
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+            </div>
+
+            <!--pagination-->
+            <div class="custom-swiper-pagination"></div>
+         </div> 
+         <!-- Hero Section with Swiper end -->
+
+         <!--services section start-->
+         <div class="services-section">
+            <div class="container-xxl">
+               <div class="services-row d-flex justify-content-between flex-wrap gap-3">
+                  <div class="discount d-flex gap-3 align-items-center">
+                     <div class="discount-img">
+                        <img src="assets/images/service-box.svg" alt>
+                     </div>
+                     <div class="discount-text">
+                        <h6 class="product-title">Discount</h6>
+                        <p class="description-two">Every week new sales</p>
+                     </div>
+                  </div>
+
+                  <div class="free-delivery d-flex gap-3 align-items-center">
+                     <div class="free-delivery-img">
+                        <img src="assets/images/service-truck.svg" alt>
+                     </div>
+                     <div class="free-delivery-text">
+                        <h6 class="product-title">Free Delivery</h6>
+                        <p class="description-two">100% Free for all orders</p>
+                     </div>
+                  </div>
+
+                  <div class="all-time-support d-flex gap-3 align-items-center">
+                     <div class="all-time-support-img">
+                        <img src="assets/images/service-24-hours.svg" alt>
+                     </div>
+                     <div class="all-time-support-text">
+                        <h6 class="product-title">Great Support 24/7</h6>
+                        <p class="description-two">We care your experiences</p>
+                     </div>
+                  </div>
+                  <div class="payment d-flex gap-3 align-items-center">
+                     <div class="payment-img">
+                        <img src="assets/images/service-shield.svg" alt>
+                     </div>
+                     <div class="payment-text">
+                        <h6 class="product-title">secure Payment</h6>
+                        <p class="description-two">100% Secure Payment Method</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--services section end-->
+
+         <!--Bestseller Products start-->
+         <div class="bestseller-product-section section-wrapper">
+            <div class="container-xxl text-center">
+               <div class="section-heading d-flex justify-content-between align-items-center gap-3">
+                  <div class="section-title d-flex align-items-center gap-4 flex-wrap">
+                     <h2 class="heading-two">Bestseller Products</h2>
+                     <p class="description-one ps-3">Weekly launched best products.</p>
+                  </div>
+                  <div class="slider-control  d-flex align-items-center gap-2">
+                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <i class="fa-solid fa-arrow-left"></i>
+                     </div>
+                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <i class="fa-solid fa-arrow-right"></i>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper productSwiper">
+                  <div class="swiper-wrapper">
+
+                  <!--slide 1-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product1.png">
+                        <img src="assets/images/fill-heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">GPS Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 2-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product2.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 3-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product3.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 4-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product4.png" class="mt-5">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 1-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product1.png">
+                        <img src="assets/images/fill-heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">GPS Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 2-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product2.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 3-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product3.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 4-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product4.png" class="mt-5">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+               </div>
+            </div>  
+
+            <a href="#" type="button" class="btn btn-info mt-5">View All<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+         </div>
+         <!--Bestseller Products end-->
+
+         <!--Featured Product start-->
+         <div class="featured-product-section section-wrapper">
+            <div class="container-xxl text-center">
+               <div class="section-heading d-flex justify-content-between align-items-center gap-3">
+                  <div class="section-title d-flex align-items-center gap-4 flex-wrap">
+                     <h2 class="heading-two">Featured Products</h2>
+                     <p class="description-one ps-3">Weekly launched best products.</p>
+                  </div>
+                  <div class="slider-control  d-flex align-items-center gap-2">
+                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <i class="fa-solid fa-arrow-left"></i>
+                     </div>
+                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <i class="fa-solid fa-arrow-right"></i>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper productSwiper">
+                  <div class="swiper-wrapper">
+
+                  <!--slide 1-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product1.png">
+                        <img src="assets/images/fill-heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">GPS Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 2-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product2.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 3-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product3.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 4-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product4.png" class="mt-5">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 1-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product1.png">
+                        <img src="assets/images/fill-heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">GPS Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 2-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product2.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div>  
+
+                  <!--slide 3-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product3.png">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                        <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Auto Drone</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+                     <!--slide 4-->
+                  <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                     <div class="product-img">
+                        <img src="assets/images/product4.png" class="mt-5">
+                        <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                     </div>
+                     <div class="product-info d-flex justify-content-between align-items-center">
+                        <div class="name-price">
+                           <h6 class="product-title">Drone Wings</h6>
+                           <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                        </div>
+                        <div class="cart-icon">
+                           <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                        </div>
+                     </div>
+                  </div> 
+
+               </div>
+            </div>  
+
+            <a href="#" type="button" class="btn btn-info mt-5">View All<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+         </div>
+         <!--Featured Product end-->
+
+         <!--Explore Categories start-->
+         <div class="explore-categories-section section-wrapper">
+            <div class="container-xxl">
+               <div class="section-heading d-flex justify-content-between align-items-center gap-3">
+                  <div class="section-title d-flex align-items-center gap-4 flex-wrap">
+                     <h2 class="heading-two">Explore Categories</h2>
+                     <p class="description-one ps-3">Weekly launched best accessories & toolskits.</p>
+                  </div>
+               </div>
+
+               <div class="row gap-4 explore-row d-flex justify-content-center">
+                  <!-- Left Column -->
+                  <div class="col-md-5 col-12 left-col flex-grow-1">
+                     <img src="assets/images/product1.png" class="img-fluid auto-drone-img" alt="Left Image">
+                     <img src="assets/images/trending-Products-Status.svg" class="status-online" alt="trending-Products-Status">
+                     <div class="drone-info">
+                        <p class="description-two">DRONE</p>
+                        <h4 class="auto-drone-collection">AUTO DRONE <span>COLLECTION</span></h4>
+                        <a href="#" class="btn btn-link">SHOP NOW</a>
+                     </div>
+                  </div>
+
+                  <!-- Right Column -->
+                  <div class="col-md-5 col-12 right-col flex-grow-1">
+                     <div class="row g-3">
+                        <div class="col-12 right-upper-col">
+                           <img src="assets/images/product4.png" class="right-upper-image" alt="Top Right Image" width="450px">
+                           <div class="drone-info">
+                              <p class="description-two">ACCESSORIES</p>
+                              <h4 class="auto-drone-collection">CAMERA<span>COLLECTION</span></h4>
+                           </div>
+                        </div>
+
+                        <!-- Bottom Two Columns -->
+                        <div class="bottom-row d-flex justify-content-between gap-4 mt-4 flex-wrap">
+                           <div class="col-sm-5 col-12 bottom-left-col flex-grow-1">
+                              <img src="assets/images/product2.png" class="bottom-left-image" alt="Bottom Left Image" width="230px">
+                              <div class="drone-info">
+                                 <p class="description-two">DRONE</p>
+                                 <h4 class="auto-drone-collection">WINGS <span>COLLECTION</span></h4>
+                              </div>
+                           </div>
+                           <div class="col-sm-5 col-12 bottom-left-col bottom-right-col flex-grow-1">
+                              <img src="assets/images/Battery-image.png" class="bottom-right-image" alt="Bottom Left Image" width="270px">
+                              <div class="drone-info">
+                                 <p class="description-two">ACCESSORIES</p>
+                                 <h4 class="auto-drone-collection">BATTERY <span>COLLECTION</span></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="button text-center">
+                  <a href="#" type="button" class="btn btn-info mt-5">Explore More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+               </div>
+            </div>
+         </div>
+         <!--Explore Categories end-->
+
+         <!--Deal day section start-->
+         <div class="deal-day-section">
+            <div class="container-xxl">
+               <div class="deal-row d-flex justify-content-between align-items-center flex-wrap">
+
+                  <div class="deal-image">
+                     <img src="assets/images/hero-dron-image.svg" alt="drone-image" class="deal-drone" width="390px" height="254px">
+                  </div>
+
+                  <div class="deal-timer d-flex gap-4 align-items-center flex-wrap text-center">
+                     <p class="heading-two">Deal of the day!</p>
+                     <img src="assets/images/deal-line.svg" alt="line">
+                     <div class="countdown d-flex gap-4">
+                        <div class="time-unit bg-white">
+                           <h4 class="product-title mt-1">15</h4>
+                           <small class="description-two">Hrs</small>
+                        </div>
+                        <img src="assets/images/timer-dots.svg">
+                        <div class="time-unit bg-white">
+                           <h4 class="product-title mt-1">55</h4>
+                           <small class="description-two">Mins</small>
+                        </div>
+                        <img src="assets/images/timer-dots.svg">
+                        <div class="time-unit bg-white">
+                           <h4 class="product-title mt-1">25</h4>
+                           <small class="description-two">Secs</small>
+                        </div>
+                     </div>
+
+                     <a href="#" type="button" class="btn btn-black">Shop Now<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <!--Deal day section end-->
+
+         <!--Next-Gen Drone start-->
+         <div class="next-gen-section section-wrapper">
+            <div class="container-xxl">
+               <div class="next-gen-row d-flex justify-content-between align-items-center flex-wrap gap-4">
+                  <div class="next-gen-left-col">
+                      <div class="section-heading d-flex justify-content-between align-items-center mb-3">
+                        <div class="section-title d-flex align-items-center mb-1 flex-wrap">
+                           <h2 class="heading-two">Next-Gen Drone</h2>
+                        </div>
+                     </div>
+                      <!--slide 3-->
+                     <div class="product-slide  d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="product-img w-100">
+                           <img src="assets/images/product3.png">
+                           <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                           <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                        </div>
+                        <div class="product-info d-flex justify-content-between align-items-center w-100">
+                           <div class="name-price">
+                              <h6 class="product-title">Auto Drone</h6>
+                              <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                           </div>
+                           <div class="cart-icon">
+                              <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+
+                  <div class="next-gen-right-col col-md-6">
+                     <img src="assets/images/next-gen-right-image.png" alt="drone-image" class="next-gen-right-image">
+                  </div>
+                 
+               </div>
+            </div>
+         </div>
+         <!--Next-Gen Drone end-->
+   
+      </main>
+      <footer>
+         <!-- <h2>Footer</h2> -->
+      </footer>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper Initialization -->
+   <script>
+      document.addEventListener('DOMContentLoaded', () => {
+         const swiper = new Swiper('.myHeroSwiper', {
+            loop: true,
+            autoplay: {
+               delay: 5000,
+               disableOnInteraction: false,
+            },
+            pagination: {
+               el: '.custom-swiper-pagination',
+               clickable: true,
+            },
+         });
+      });
+
+        // Product Swiper
+        const productSwiper = new Swiper(".productSwiper", {
+         slidesPerView: 4,
+         spaceBetween: 24,
+         loop: false,
+         centeredSlides: false,
+         navigation: {
+            nextEl: ".silder-next",
+            prevEl: ".silder-prev",
+         },
+         breakpoints: {
+            120: { slidesPerView: 1},
+            320: { slidesPerView: 1},
+            576: { slidesPerView: 2},
+            768: { slidesPerView: 2},
+            992: { slidesPerView: 3},
+            1200: { slidesPerView: 4},
+         },
+         });
+
+
+   </script>
+      <!-- Swiper JS -->
+      <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+      <!-- build:js -->
+      <script src="dist/assets/js/custom.min.js"></script>
+      <!-- endbuild -->
+   </body>
+</html>
+
