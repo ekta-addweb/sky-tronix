@@ -344,5 +344,215 @@
   }
 }
 
+/*The AI-Driven Drone style*/
+.ai-drone-section
+{
+  background-color: $bg-color;
+  .container-xxl
+  {
+      .ai-drone-left-col
+      {
+        flex-basis: 380px;
+        height: 560px;
 
+        background: 
+           rgba(255, 255, 255, 0.9) 
+           url('../../../assets/images/ai-dron-bg.jpg');
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 20px;
+
+        .ai-drone
+        {
+          position: absolute;
+          top: 230px;
+          left: 138px;
+        }
+        .heading-one
+        {
+          font-size: 36px;
+	        line-height: 47px;
+        }
+        span
+        {
+          color: $electric-blue;
+        }
+        .ai-play-button
+        {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          cursor: pointer;
+        }
+      }
+      .description-two
+      {
+        font-size: 18px;
+        line-height: 28.8px;
+        margin-bottom: 10px;
+      }
+      .old-price
+      {
+        text-decoration: none;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+
+        &::after
+        {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 0;
+          background: url('../../../assets/images/Check-icon.svg');
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .ai-title
+      {
+        font-weight: 600;
+        font-size: 16px;
+        color: $black;
+      }
+  }
+}
+
+/*HAPPY CLIENT STYLE*/
+.happy-client-section
+{ 
+  .container-xxl
+  {
+    .client-info
+    {
+      .current-price
+      {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .description-one
+      {
+        font-size: 16px;
+        color: $carbon-black;
+      }
+    }
+    .client-review
+    {
+      .description-two
+      {
+        color: $dark-silver;
+      }
+    }
+  }
+}
+
+/*FAQS STYLE*/
+.faqs-section
+{
+  .container-xxl
+  {
+    .accordion-item {
+      border: 1px solid $light-grey;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: $white;
+      transition: all 0.3s ease;
+    }
+
+    .accordion-button {
+      position: relative;
+      color: $carbon-black; 
+      background-color: $white;
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        background: url('../../../assets/images/faqs-Plus.svg') no-repeat center;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: $electric-blue; 
+      color: $white;
+      font-weight: 600;
+
+      &::after {
+        background: url('../../../assets/images/faqs-Minus.svg') no-repeat center;
+        background-size: 20px 20px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .accordion-body {
+      background-color: #fff;
+
+      .description-two
+      {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/*LATEST STORY STYLE*/
+
+.latest-story-section
+{
+  background: $bg-color;
+  .container-xxl
+  {
+    .story-slide
+    {
+      .our-story
+      {
+        .story-img
+        {
+          position: relative;
+          .story-drone-image
+          {
+            border-radius: 20px;
+          }
+          .description-one
+          {
+            font-size: 14px;
+            color: $electric-blue;
+            padding: 5px 15px;
+            background-color: $white;
+            border-radius: 5px;
+          }
+          .story-date
+          {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+          }
+        }
+
+        .story-content
+        {
+          .description-two
+          {
+            opacity: 80%;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
 
