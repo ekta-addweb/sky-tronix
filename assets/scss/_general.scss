@@ -345,4 +345,45 @@ img {
   }
 }
 
+/*ALL 
+	PAGE 
+		HEADING 
+				STYLE*/
+
+.page-heading
+{
+	background: #029FAE1A
+	url('../../../assets/images/page-heading-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 60px;
+
+		@media #{$brkmx768} {
+			padding: 20px 30px;
+		}
+
+	.heading-two
+	{
+		font-size: 36px;
+		line-height: 47px;
+		text-align: center;
+
+		@media #{$brkmx768} {
+			font-size: 30px;
+		}
+		@media #{$brkmx576} {
+			font-size: 25px;
+			line-height: 35px;
+
+		}
+	}
+	.breadcrumb .breadcrumb-item a {
+		color: $carbon-black;
+	}
+
+	.breadcrumb .breadcrumb-item.active a {
+		color: $electric-blue;
+	}
+}
+
 

@@ -556,3 +556,109 @@
   }
 }
 
+/*Category
+
+          page 
+          
+                style*/
+
+main{
+  background-color: $bg-color;
+}
+.drone-category
+{
+  .container-xxl
+  {
+    .heading-two
+    {
+      font-size: 36px;
+    }
+    .drone-category-left ,.drone-category-right
+    {
+      background-color: rgba(30, 30, 30, 0.05);
+      padding: 20px;
+      border-radius: 20px;
+
+      .drone-info
+      {
+        .description-one
+        {
+          color: $carbon-black;
+          font-size: 24px;
+
+          span{
+            color: $electric-blue;
+            font-weight: 700;
+          }
+        }
+        .description-two
+        {
+          color: $dark-silver;
+          line-height: 22px;
+          font-size: 14px;
+          width: 190px;
+        }
+        .shop-now
+        {
+          font-weight: 500;
+          font-size: 14px;
+          color: $carbon-black;
+          border-bottom: 1px solid $carbon-black;
+          display: inline;
+          padding-bottom: 2px;
+        }
+      }
+    }
+    .drone-category-right
+    {
+      background-color: #029FAE0D;
+    }
+  }
+}
+
+.custom-pagination {
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: inline-flex;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  background-color: white;
+
+  .page-item {
+
+    .page-link {
+      border: none;
+      border-radius: 4px;
+      color: #111;
+      font-weight: 500;
+      font-size: 12px;
+      background: transparent;
+      padding: 8px 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+
+    &.active .page-link {
+      background-color: $electric-blue;
+      color: #fff;
+    }
+
+    &.disabled .page-link {
+      color: #aaa;
+      pointer-events: none;
+      background-color: transparent;
+    }
+  }
+}
+.drone-category-slider
+{
+    background: none;
+
+    .heading-two
+    {
+      font-size: 36px;
+      line-height: 47px;
+    }
+}

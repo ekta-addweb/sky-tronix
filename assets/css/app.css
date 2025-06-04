@@ -11086,6 +11086,44 @@ img {
     line-height: 18px;
   }
 }
+/*ALL 
+	PAGE 
+		HEADING 
+				STYLE*/
+.page-heading {
+  background: rgba(2, 159, 174, 0.1019607843) url("../../../assets/images/page-heading-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 60px;
+}
+@media (max-width: 767.98px) {
+  .page-heading {
+    padding: 20px 30px;
+  }
+}
+.page-heading .heading-two {
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .page-heading .heading-two {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .page-heading .heading-two {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+.page-heading .breadcrumb .breadcrumb-item a {
+  color: #1E1E1E;
+}
+.page-heading .breadcrumb .breadcrumb-item.active a {
+  color: #029FAE;
+}
+
 .first-header-section {
   background-color: #1E1E1E;
 }
@@ -11679,4 +11717,85 @@ footer .container-xxl .copy-right .description-two span {
 .latest-story-section .container-xxl .story-slide .our-story .story-content .description-two {
   opacity: 80%;
   font-size: 15px;
+}
+
+/*Category
+
+          page 
+
+                style*/
+main {
+  background-color: rgba(30, 30, 30, 0.02);
+}
+
+.drone-category .container-xxl .heading-two {
+  font-size: 36px;
+}
+.drone-category .container-xxl .drone-category-left, .drone-category .container-xxl .drone-category-right {
+  background-color: rgba(30, 30, 30, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+}
+.drone-category .container-xxl .drone-category-left .drone-info .description-one, .drone-category .container-xxl .drone-category-right .drone-info .description-one {
+  color: #1E1E1E;
+  font-size: 24px;
+}
+.drone-category .container-xxl .drone-category-left .drone-info .description-one span, .drone-category .container-xxl .drone-category-right .drone-info .description-one span {
+  color: #029FAE;
+  font-weight: 700;
+}
+.drone-category .container-xxl .drone-category-left .drone-info .description-two, .drone-category .container-xxl .drone-category-right .drone-info .description-two {
+  color: #909090;
+  line-height: 22px;
+  font-size: 14px;
+  width: 190px;
+}
+.drone-category .container-xxl .drone-category-left .drone-info .shop-now, .drone-category .container-xxl .drone-category-right .drone-info .shop-now {
+  font-weight: 500;
+  font-size: 14px;
+  color: #1E1E1E;
+  border-bottom: 1px solid #1E1E1E;
+  display: inline;
+  padding-bottom: 2px;
+}
+.drone-category .container-xxl .drone-category-right {
+  background-color: rgba(2, 159, 174, 0.0509803922);
+}
+
+.custom-pagination {
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: inline-flex;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  background-color: white;
+}
+.custom-pagination .page-item .page-link {
+  border: none;
+  border-radius: 4px;
+  color: #111;
+  font-weight: 500;
+  font-size: 12px;
+  background: transparent;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+.custom-pagination .page-item .page-link:hover {
+  background-color: #e0e0e0;
+}
+.custom-pagination .page-item.active .page-link {
+  background-color: #029FAE;
+  color: #fff;
+}
+.custom-pagination .page-item.disabled .page-link {
+  color: #aaa;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.drone-category-slider {
+  background: none;
+}
+.drone-category-slider .heading-two {
+  font-size: 36px;
+  line-height: 47px;
 }
