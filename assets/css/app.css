@@ -11280,6 +11280,61 @@ img {
   color: #fff;
 }
 
+.mega-menu {
+  max-width: 916px;
+  left: 250px;
+  top: 75%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+.mega-menu .heading-two {
+  font-size: 16px;
+  line-height: 24px;
+}
+.mega-menu li {
+  padding: 10px 15px;
+}
+.mega-menu .description-two {
+  font-size: 14px;
+  color: #909090;
+}
+.mega-menu .featured-col .featured-one {
+  border-radius: 10px;
+  padding: 13px;
+}
+.mega-menu .featured-col .description-two {
+  color: #1E1E1E;
+}
+.mega-menu .featured-col .heading-two {
+  font-size: 14px;
+  color: #029FAE;
+}
+.mega-menu .bg-lightblue {
+  background-color: rgba(2, 159, 174, 0.1019607843);
+}
+.mega-menu .mega-menu a:hover {
+  color: #029FAE;
+}
+.mega-menu .description-one {
+  font-size: 14px;
+}
+.mega-menu .badge {
+  background-color: #029FAE;
+  padding: 5px 20px;
+  font-size: 16px;
+}
+.mega-menu .btn-link {
+  font-size: 18px;
+}
+
+.mega-hover:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  display: block !important;
+}
+
 footer .container-xxl .heading-two {
   font-size: 18px;
   border-bottom: 1px solid #1E1E1E;
@@ -11822,4 +11877,33 @@ main {
 .drone-category-slider .heading-two {
   font-size: 36px;
   line-height: 47px;
+}
+
+/*PRODUCR PAGE
+
+              STYLE   
+
+                    START*/
+main {
+  background-color: rgba(30, 30, 30, 0.02);
+}
+
+.product-section .description-one {
+  font-weight: 400;
+}
+.product-section .collapse li {
+  padding: 15px 10px;
+}
+.product-section .collapse .description-two {
+  font-size: 14px;
+}
+.product-section .collapse .form-check-input {
+  border: 1.5px solid #909090;
+}
+.product-section .drone-image {
+  background-color: rgba(2, 159, 174, 0.0509803922);
+  border-radius: 20px;
+}
+.product-section .product-title {
+  font-size: 18px;
 }

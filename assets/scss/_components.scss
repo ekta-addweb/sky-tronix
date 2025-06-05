@@ -662,3 +662,44 @@ main{
       line-height: 47px;
     }
 }
+
+/*PRODUCR PAGE
+            
+              STYLE   
+                    
+                    START*/
+
+main
+{
+  background-color: $bg-color;
+}
+.product-section
+{
+  .description-one
+  {
+    font-weight: 400;
+  }
+  .collapse
+  {
+    li{
+      padding: 15px 10px;
+    }
+      .description-two
+    {
+      font-size: 14px;
+    }
+    .form-check-input
+    {
+      border: 1.5px solid $dark-silver;
+    }
+  }
+  .drone-image
+  {
+    background-color: #029FAE0D;
+    border-radius: 20px;
+  }
+  .product-title
+  {
+    font-size: 18px;
+  }
+}

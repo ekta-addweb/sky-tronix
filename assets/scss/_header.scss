@@ -185,3 +185,74 @@
         }
     }
 }
+
+//mega menu style
+.mega-menu {
+    max-width: 916px;
+    left: 250px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+       .heading-two
+        {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        li{
+            padding: 10px 15px;
+        }
+        .description-two
+        {
+            font-size: 14px;
+            color: $dark-silver;
+        }
+        .featured-col
+        {
+            .featured-one
+            {
+                border-radius: 10px;
+                padding: 13px;
+            }
+            .description-two
+            {
+                color: $carbon-black;
+            }
+            .heading-two
+            {
+                font-size: 14px;
+                color: $electric-blue;
+            }
+        }
+        .bg-lightblue 
+        {
+              background-color: #029FAE1A;
+        }
+        .mega-menu a:hover 
+        {
+              color: $electric-blue;
+        }
+        .description-one
+        {
+            font-size: 14px;
+        }
+        .badge
+        {
+            background-color: $electric-blue;
+            padding: 5px 20px;
+            font-size: 16px;
+
+        }
+        .btn-link
+        {
+            font-size: 18px;
+        }
+}
+.mega-hover:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    display: block !important;
+}
+
