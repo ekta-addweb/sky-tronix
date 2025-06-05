@@ -7,9 +7,7 @@
       <title>Sky Tronix</title>
       <!-- Favicons -->
       <link rel="icon" href="assets/images/favicon.svg">
-      <!-- build:css -->
-      <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
-      <!-- endbuild -->
+      <link rel="stylesheet" href="assets/css/app.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
       <!--work sans font link-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -104,68 +102,36 @@
          </div>   
          <!--second header end-->   
          
-         <!-- third header Start -->
-         <div class="third-header-section">
-            <nav class="navbar navbar-expand-lg bg-white p-0">
-               <div class="container-xxl d-flex justify-content-between align-items-center">
-                  
-                  <!-- All Categories-->
-                  <div class="d-none d-lg-block">
-                     <div class="nav-item dropdown">
-                        <a class="dropdown-toggle category-btn description-two" href="#" id="desktopCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           <span class="navbar-toggler-icon"></span> All Categories
-                        </a>
-                        <ul class="dropdown-menu mt-3 category-dropdown" aria-labelledby="desktopCategoryDropdown">
-                           <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Camera</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Wings</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Console</a></li>
+         <!--third header start-->
+         <nav class="navbar third-header-section navbar-expand-lg bg-white p-0">
+            <div class="container-xxl">
+               <!--Button-->
+               <button class="btn btn-outline-secondary category-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span>All Categories</span>
+               </button>
+
+               <!--Navigation Menu -->
+               <div class="collapse navbar-collapse" id="mainNavbar">
+                  <ul class="navbar-nav ms-auto mt-3 mt-lg-0 d-flex align-items-center">
+                     <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
+                     <li><span class="header-line">|</span></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item description-two" href="#">FAQ</a></li>
+                           <li><a class="dropdown-item description-two" href="#">Contact</a></li>
                         </ul>
-                     </div>
-                  </div>
-                  <!-- Toggle Button-->
-                  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <!--Nav Items-->
-                  <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                     <ul class="navbar-nav align-items-lg-center gap-lg-3 w-100 justify-content-lg-end">
-                        <!-- Mobile Only: All Categories -->
-                        <li class="nav-item dropdown d-block d-lg-none mt-2">
-                           <a class="nav-link dropdown-toggle description-two" href="#" id="mobileCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Categories
-                           </a>
-                           <ul class="dropdown-menu category-dropdown" aria-labelledby="desktopCategoryDropdown">
-                              <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
-                              <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
-                              <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
-                              <li><a class="dropdown-item description-two" href="#">Camera</a></li>
-                              <li><a class="dropdown-item description-two" href="#">Wings</a></li>
-                              <li><a class="dropdown-item description-two" href="#">Console</a></li>
-                           </ul>
-                        </li>
-                        <!-- Shared Menu Items -->
-                        <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
-                        <li><span class="header-line">|</span></li>
-                        <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
-                        <li><span class="header-line">|</span></li>
-                        <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
-                        <li><span class="header-line">|</span></li>
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
-                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">FAQ</a></li>
-                              <li><a class="dropdown-item" href="#">Contact</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </div>
+                     </li>
+                  </ul>
                </div>
-            </nav>
-         </div>
-         <!-- third header end -->
+            </div>
+         </nav>
+         <!--third header end-->
     </header>
 
     <main>
@@ -692,8 +658,6 @@
    </script>
     <!-- Swiper JS -->
     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
-    <!-- build:js -->
-    <script src="dist/assets/js/custom.min.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/*.js"></script>
 </body>
 </html>

@@ -104,36 +104,72 @@
          </div>   
          <!--second header end-->   
          
-         <!--third header start-->
-         <nav class="navbar third-header-section navbar-expand-lg bg-white p-0">
-            <div class="container-xxl">
-               <!--Button-->
-               <button class="btn btn-outline-secondary category-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  <span>All Categories</span>
-               </button>
+         <!-- third header Start -->
+         <div class="third-header-section">
+               <nav class="navbar navbar-expand-lg bg-white p-0">
+                  <div class="container-xxl d-flex justify-content-between align-items-center">
+                     
+                     <!-- All Categories-->
+                     <div class="d-none d-lg-block">
+                        <div class="nav-item dropdown">
+                           <a class="dropdown-toggle category-btn description-two" href="#" id="desktopCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="navbar-toggler-icon"></span> All Categories
+                           </a>
+                           <ul class="dropdown-menu mt-3 category-dropdown" aria-labelledby="desktopCategoryDropdown">
+                              <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Camera</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Wings</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Console</a></li>
+                           </ul>
+                        </div>
+                     </div>
 
-               <!--Navigation Menu -->
-               <div class="collapse navbar-collapse" id="mainNavbar">
-                  <ul class="navbar-nav ms-auto mt-3 mt-lg-0 d-flex align-items-center">
-                     <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
-                     <li><span class="header-line">|</span></li>
-                     <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
-                     <li><span class="header-line">|</span></li>
-                     <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
-                     <li><span class="header-line">|</span></li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
-                        <ul class="dropdown-menu">
-                           <li><a class="dropdown-item description-two" href="#">FAQ</a></li>
-                           <li><a class="dropdown-item description-two" href="#">Contact</a></li>
+                     <!-- Toggle Button-->
+                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+
+                     <!--Nav Items-->
+                     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                        <ul class="navbar-nav align-items-lg-center gap-lg-3 w-100 justify-content-lg-end">
+
+                           <!-- Mobile Only: All Categories -->
+                           <li class="nav-item dropdown d-block d-lg-none mt-2">
+                              <a class="nav-link dropdown-toggle description-two" href="#" id="mobileCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Categories
+                              </a>
+                              <ul class="dropdown-menu category-dropdown" aria-labelledby="desktopCategoryDropdown">
+                                 <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Camera</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Wings</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Console</a></li>
+                              </ul>
+                           </li>
+
+                           <!-- Shared Menu Items -->
+                           <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                 <li><a class="dropdown-item" href="#">Contact</a></li>
+                              </ul>
+                           </li>
                         </ul>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-         <!--third header end-->
+                     </div>
+                  </div>
+               </nav>
+         </div>
+         <!-- third header end -->
       </header>
 
       <main>
@@ -377,14 +413,16 @@
                      <h2 class="heading-two">Bestseller Products</h2>
                      <p class="description-one ps-3">Weekly launched best products.</p>
                   </div>
+                  <!-- Bestseller Section Navigation -->
                   <div class="slider-control d-flex align-items-center gap-3">
-                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                     <i class="fa-solid fa-arrow-left"></i>
+                     <div class="bestseller-prev silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                        <i class="fa-solid fa-arrow-left"></i>
                      </div>
-                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                     <i class="fa-solid fa-arrow-right"></i>
+                     <div class="bestseller-next silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                        <i class="fa-solid fa-arrow-right"></i>
                      </div>
                   </div>
+
                </div>
 
                <div class="swiper productSwiper">
@@ -546,17 +584,19 @@
                      <h2 class="heading-two">Featured Products</h2>
                      <p class="description-one ps-3">Weekly launched best products.</p>
                   </div>
-                  <div class="slider-control  d-flex align-items-center gap-3">
-                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                     <i class="fa-solid fa-arrow-left"></i>
+                  <!-- Featured Section Navigation -->
+                  <div class="slider-control d-flex align-items-center gap-3">
+                     <div class="featured-prev silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                        <i class="fa-solid fa-arrow-left"></i>
                      </div>
-                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                     <i class="fa-solid fa-arrow-right"></i>
+                     <div class="featured-next silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                        <i class="fa-solid fa-arrow-right"></i>
                      </div>
                   </div>
+
                </div>
 
-               <div class="swiper productSwiper">
+               <div class="swiper featuredSwiper">
                   <div class="swiper-wrapper">
 
                   <!--slide 1-->
@@ -891,10 +931,10 @@
                      <p class="description-one ps-3">1200+ Positive customer reviews</p>
                   </div>
                   <div class="slider-control d-flex align-items-center gap-3">
-                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <div class="client-prev silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
                      <i class="fa-solid fa-arrow-left"></i>
                      </div>
-                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <div class="client-next silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
                      <i class="fa-solid fa-arrow-right"></i>
                      </div>
                   </div>
@@ -1140,15 +1180,15 @@
                      <p class="description-one ps-3">Recently big news & blog story</p>
                   </div>
                   <div class="slider-control d-flex align-items-center gap-3">
-                     <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <div class="story-prev silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
                      <i class="fa-solid fa-arrow-left"></i>
                      </div>
-                     <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                     <div class="story-next silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
                      <i class="fa-solid fa-arrow-right"></i>
                      </div>
                   </div>
                </div>
-               <div class="swiper clientSwiper">
+               <div class="swiper storySwiper">
                   <div class="swiper-wrapper">
 
                   <!--slide 1-->
@@ -1376,25 +1416,46 @@
          });
       });
 
-        // Product Swiper
-        const productSwiper = new Swiper(".productSwiper", {
+         // Product Swiper
+         const productSwiper = new Swiper(".productSwiper", {
          slidesPerView: 4,
          spaceBetween: 24,
          loop: false,
          centeredSlides: false,
          navigation: {
-            nextEl: ".silder-next",
-            prevEl: ".silder-prev",
+            nextEl: ".bestseller-next", 
+            prevEl: ".bestseller-prev", 
          },
          breakpoints: {
-            120: { slidesPerView: 1},
-            320: { slidesPerView: 1},
-            576: { slidesPerView: 2},
-            768: { slidesPerView: 2},
-            992: { slidesPerView: 3},
-            1200: { slidesPerView: 4},
+            120: { slidesPerView: 1 },
+            320: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
          },
-        });
+         });
+
+         // Featured Swiper
+         const featuredSwiper = new Swiper(".featuredSwiper", {
+         slidesPerView: 4,
+         spaceBetween: 24,
+         loop: false,
+         centeredSlides: false,
+         navigation: {
+            nextEl: ".featured-next",
+            prevEl: ".featured-prev", 
+         },
+         breakpoints: {
+            120: { slidesPerView: 1 },
+            320: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+         },
+         });
+
 
          //video js
            document.getElementById("playBtn").addEventListener("click", function () {
@@ -1411,8 +1472,28 @@
          loop: true,
          centeredSlides: false,
          navigation: {
-            nextEl: ".silder-next",
-            prevEl: ".silder-prev",
+            nextEl: ".client-next",
+            prevEl: ".client-prev",
+         },
+         breakpoints: {
+            120: { slidesPerView: 1},
+            320: { slidesPerView: 1},
+            576: { slidesPerView: 2},
+            768: { slidesPerView: 2},
+            992: { slidesPerView: 3},
+            1200: { slidesPerView: 3},
+         },
+        });
+
+        // story Swiper
+        const storySwiper = new Swiper(".storySwiper", {
+         slidesPerView: 3,
+         spaceBetween: 24,
+         loop: true,
+         centeredSlides: false,
+         navigation: {
+            nextEl: ".story-next",
+            prevEl: ".story-prev",
          },
          breakpoints: {
             120: { slidesPerView: 1},
