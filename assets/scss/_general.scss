@@ -386,4 +386,38 @@ img {
 	}
 }
 
+//detail about drone
+.detail-about-drone
+{
+	.description-two
+    {
+      font-size: 18px;
+      line-height: 28.8px;
+      margin-bottom: 10px;
+    }
+    .old-price
+    {
+      text-decoration: none;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      &::after
+      {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        background: url('../../../assets/images/Check-icon.svg');
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .ai-title
+    {
+      font-weight: 600;
+      font-size: 16px;
+      color: $black;
+    }
+}
+
 

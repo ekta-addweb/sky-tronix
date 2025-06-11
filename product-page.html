@@ -262,7 +262,7 @@
         <!--page heding end-->
 
         <!--search-price start-->
-        <div class="search-price-section">
+        <div class="search-price-section mb-4">
             <div class="container-xxl">
                 <div class="row d-flex justify-content-between align-items-center gap-2 flex-wrap">
                     <div class="col-md-5">
@@ -275,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center gap-3">
+                    <div class="col-md-4 d-flex align-items-center gap-3 justify-content-end">
                         <p class="text-secondary">Sort by:</p>
                         <div class="dropdown bg-white">
                             <button class="btn border dropdown-toggle text-secondary rounded-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -294,17 +294,17 @@
         <!--search-price end-->
 
         <!--product main section start-->
-        <section class="product-section">
+        <section class="product-section section-wrapper pt-0">
             <div class="container-xxl">
-                <div class="">
                     <div class="row">
+                        <!--product left side bar-->
                         <div class="col-lg-3 mb-4">
                             <div class="mb-0 mt-3 border rounded-2 p-2 d-inline filter-toggle cursor-pointer collapsed d-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#filterSidebarCollapse" aria-expanded="false" aria-controls="filterSidebarCollapse">
                                CATEGORIES <i class="fa-solid fa-angle-down cursor-pointer"></i>
                             </div>
                             
                             <div class="collapse d-lg-block mt-3" id="filterSidebarCollapse">
-                                <div class="pro-left-card border rounded p-3">
+                                <div class="pro-left-card p-3">
                             
                                     <!-- Category -->
                                     <div class="Category-drop" style="width: 100%;">
@@ -424,12 +424,12 @@
                                         <div class="d-flex justify-content-between align-items-center mt-2 mb-4">
                                             <div class="min-input">
                                                 <label class="description-two text-small" for="cat1">$ min:</label>
-                                                <input type="text" class="form-control text-center text-primary fw-bold border-primary" value="" style="width: 110px;" />
+                                                <input type="text" class="form-control text-center text-primary fw-bold border-primary" value="" style="width: 100px;" />
                                             </div>
                                         
                                             <div class="mex-input">
                                                 <label class="description-two text-small" for="cat1">$ max:</label>
-                                                <input type="text" class="form-control text-center text-primary fw-bold border-primary" value="" style="width: 110px;" />
+                                                <input type="text" class="form-control text-center text-primary fw-bold border-primary" value="" style="width: 100px;" />
                                             </div>
                                         </div>
                                     </div>
@@ -522,18 +522,653 @@
                             </div>
                         </div>
                     
-                <!-- Product Grid -->
-                <div class="col-lg-9 pro-right-card">
-                </div>
-                </div>
-            </div>
-            </div>
-    </section>
+                        <!-- Product right cards -->
+                        <div class="col-lg-9 pro-right-card">
+                            <div class="product-view d-flex flex-wrap justify-content-between">
+                                <div class="tabs-wrapper">
+                                    <ul class="nav nav-tabs tab-scroll d-flex justify-content-center gap-2 border-0" id="productTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active border-0 bg-transparent p-0" id="grid-tab" data-bs-toggle="tab" data-bs-target="#gridtab" type="button" role="tab" aria-controls="gridtab" aria-selected="true">
+                                                <img src="assets/images/product-images/grid-view.svg" alt="grid-view">
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link border-0 bg-transparent p-0" id="list-tab" data-bs-toggle="tab" data-bs-target="#listtab" type="button" role="tab" aria-controls="listtab" aria-selected="false">
+                                                <img src="assets/images/product-images/list-view.png" alt="list-view">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
 
+                                <div class="drone-count">
+                                    <p class="description-two">684 products find for “auto drone”</p>
+                                </div>
+                            </div>
+
+                            <div class="tab-content mt-4" id="productTabsContent">
+                                <!-- Grid View -->
+                                <div class="tab-pane fade show active" id="gridtab" role="tabpanel" aria-labelledby="grid-tab">
+
+                                    <!--row 1-->
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
+                                        <!--card 1-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product1.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                        <h6 class="product-title">GPS Auto Drone</h6>
+                                                        <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                        <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <!--col 2-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product2.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Drone Wings</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <!--col 3-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product3.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Auto Drone</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--card 1-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product1.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                        <h6 class="product-title">GPS Auto Drone</h6>
+                                                        <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                        <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--col 2-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product2.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Drone Wings</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <!--col 3-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product3.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Auto Drone</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--card 1-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product1.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                        <h6 class="product-title">GPS Auto Drone</h6>
+                                                        <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                        <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--col 2-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product2.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Drone Wings</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <!--col 3-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product3.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Auto Drone</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--card 1-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product1.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                        <h6 class="product-title">GPS Auto Drone</h6>
+                                                        <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                        <img src="assets/images/Fill-Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <!--col 2-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product2.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Drone Wings</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <!--col 3-->
+                                        <div class="col">
+                                            <div class="product-slide d-flex bg-transparent border-0 flex-column justify-content-center align-items-center text-center mb-4">
+                                                <div class="product-img">
+                                                    <img src="assets/images/product3.png" class="img-fluid">
+                                                    <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon img-fluid">
+                                                    <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag img-fluid">
+                                                </div>
+                                                <div class="product-info d-flex justify-content-between align-items-center">
+                                                    <div class="name-price">
+                                                    <h6 class="product-title">Auto Drone</h6>
+                                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                                    </div>
+                                                    <div class="cart-icon">
+                                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                    </div>
+
+                                    <!--pagination start-->
+                                    <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                                        <ul class="pagination justify-content-center custom-pagination">
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true" class="pagination-icon">&lsaquo;</span>
+                                            </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&rsaquo;</span>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <!-- List View -->
+                                <div class="tab-pane fade" id="listtab" role="tabpanel" aria-labelledby="list-tab">
+
+                                    <!--row 1-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product-images/product1.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/new-Products-Status.svg" alt="new" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">GPS Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 2-->
+                                    <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product2.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Drone Wings</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 3-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product3.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/sale-Products-Status.svg" alt="sale" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 1-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product-images/product1.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/new-Products-Status.svg" alt="new" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">GPS Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 2-->
+                                    <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product2.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Drone Wings</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 3-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product3.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/sale-Products-Status.svg" alt="sale" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <!--row 1-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product-images/product1.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/new-Products-Status.svg" alt="new" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">GPS Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 2-->
+                                    <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product2.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Drone Wings</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--row 3-->
+                                   <div class="row g-4 align-items-center flex-wrap mb-4">
+                                        <!-- Image col -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="list-image d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/images/product3.png" alt="product-img" class="img-fluid pro-list-image" width="250px">
+                                                <img src="assets/images/sale-Products-Status.svg" alt="sale" class="new-Products-Status">
+                                            </div>
+                                        </div>
+
+                                        <!-- Content col -->
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="list-drone-info">
+                                                <div class="name-price mb-2">
+                                                    <h6 class="product-title mb-1">Auto Drone</h6>
+                                                    <p class="current-price mb-2">$20.00 <span class="old-price">$99.00</span></p>
+                                                    <p class="mb-2 description-two">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+                                                    </p>
+                                                </div>
+                                                <div class="cart-icon d-flex align-items-center gap-3">
+                                                    <img src="assets/images/product-images/list-Add-Cart.svg" alt="add-cart">
+                                                    <img src="assets/images/product-images/list-heart.svg" alt="heart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--pagination start-->
+                                    <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                                        <ul class="pagination justify-content-center custom-pagination">
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true" class="pagination-icon">&lsaquo;</span>
+                                            </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&rsaquo;</span>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
         <!--product main section end-->
-
-
     </main>
+
+    <footer class="section-wrapper pb-0">
+        <div class="container-xxl">
+            <div class="row d-flex justify-content-between gap-4 mb-5">
+
+               <div class="col-12 col-md-5">
+                  <h6 class="heading-two">Subscribe to our newsletter!</h6>
+                  <p class="description-two mb-3">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus</p>
+                  <div class="input-form d-flex gap-4 flex-wrap mb-3">
+                     <input type="text" placeholder="Email here" class="ps-3 col-md-8 col-12">
+                     <a href="#" type="button" class="btn btn-black">Subscribe</i></a>
+                  </div>
+                  <ul class="d-flex gap-3">
+                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+
+               <div class="col-12 col-md-6 d-flex justify-content-between flex-wrap gap-3">
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Our shop</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Drone</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Accessories</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Wishlist</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">My Cart</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">My Account</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Quick Links</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">About US</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Blogs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Contact Us</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Support</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Help & Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Tearms & Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Privacy Policy</a></li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="section-divider mb-3">
+               <span class="line"></span>
+               <div class="logo">
+                  <img src="assets/images/Logo.png" alt="Logo"  width="153px" height="57px"/>
+               </div>
+               <span class="line"></span>
+            </div>
+
+            <div class="copy-right d-flex justify-content-between flex-wrap gap-3 mb-5">
+               <div class="copy-right-text">
+                  <p class="description-two">@2025 - All Rights Reserved by <span class="description-two">SkyTronics.</span></p>
+               </div>
+               <div class="payment-image d-flex gap-4 flex-wrap">
+                  <img src="assets/images/stripe-img.svg" alt="stripe-img">
+                  <img src="assets/images/paypal-img.svg" alt="paypal-img">
+                  <img src="assets/images/visa-img.svg" alt="visa-img">
+                  <img src="assets/images/mastercard-img.svg" alt="mastercard-img">
+               </div>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
     <!-- build:js -->
