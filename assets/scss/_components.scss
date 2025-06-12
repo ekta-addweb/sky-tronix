@@ -1102,3 +1102,79 @@ main
     }
   }
 }
+
+/*CART PAGE
+
+            STYLE
+            
+                  START*/
+
+.nav-tabs {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  border: 2px solid ;
+
+  .heading-two
+  {
+    color: $dark-silver;
+    font-size: 18px;
+  }
+  .description-two
+  {
+    color: $dark-silver;
+  }
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+
+  .nav-link.active 
+  {
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid $electric-blue !important;
+
+    .heading-two
+    {
+      color: $carbon-black;
+    }
+  }
+  .nav-link {
+    white-space: nowrap; 
+  }
+}
+
+.quantity-box > * {
+  width: 35px;
+  height: 35px;
+  border-radius: 0px;
+  font-size: 18px;
+  background-color: transparent;
+
+  @media #{$brkmx576} {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+  }
+}
+.cart-price
+{
+  background-color: $white;
+  border-radius: 20px;
+  border: 1px solid #1E1E1E1A;
+  padding: 20px;
+  width: 100%;
+  max-width: 390px;
+}
+.input-g{
+  input{
+    border-radius: 5px;
+    border: 1px solid #90909080;
+  }
+}
+
