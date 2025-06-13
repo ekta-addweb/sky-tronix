@@ -1131,8 +1131,6 @@ main
     background: #ccc;
     border-radius: 10px;
   }
-
-
   .nav-link.active 
   {
     border: none;
@@ -1148,6 +1146,25 @@ main
     white-space: nowrap; 
   }
 }
+
+.input-responsive {
+  width: 90%; // default width
+
+  @media (max-width: 576px) {
+    width: 100% !important;
+  }
+}
+
+.input-responsive2 {
+  width: 95%;
+}
+
+@media (max-width: 576px) {
+  .input-responsive2 {
+    width: 100% !important;
+  }
+}
+
 
 .quantity-box > * {
   width: 35px;
@@ -1177,4 +1194,68 @@ main
     border: 1px solid #90909080;
   }
 }
+//shipping page
+.shipping-form
+{
+  .description-two
+  {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  input ,select,textarea{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #90909080 !important;
+    color: $dark-silver;
+    text-transform: capitalize;
+  }
+  .form-checkbox
+  {
+    width: 23px;
+    height: 23px;
+    border: 1px solid $electric-blue;
+    border-radius: 5px;
+  }
+}
 
+//confirmation page
+
+.order-details
+{
+  padding: 20px 40px;
+  border: 2px dashed $electric-blue ;
+  border-radius: 10px;
+}
+
+
+/*wishlist PAGE
+
+            STYLE
+            
+                  START*/
+
+.wishlist-product
+{
+  .drone-info
+  {
+    .description-two
+    {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  .btn
+    {
+      padding: 12px 20px;
+    }
+    .btn-info
+    {
+      font-weight: 600;
+	    font-size: 14px;
+    }
+    .gray-btn
+    {
+      background-color: $dark-silver;
+      border: transparent;
+    }
+}
