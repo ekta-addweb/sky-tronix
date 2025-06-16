@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Sky Tronix</title>
+      <!-- Favicons -->
+      <link rel="icon" href="assets/images/favicon.svg">
+      <!-- build:css -->
+      <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
+      <!-- endbuild -->
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!--work sans font link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--font Awesome link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- Swiper CSS -->
+   </head>
+<body>
+    <header> 
+         <!--first header start-->
+         <div class="first-header-section">
+            <div class="container-xxl heading-wrapper">
+               <div class="row d-flex justify-content-between flex-wrap gap-3">
+                  <div class="col-md-4">
+                     <p class="description-two text-light ms-2"><i class="fa-solid fa-check"></i> Free shipping on all orders over $50</p>
+                  </div>
+                  <div class="col-md-6 me-3">
+                     <ul class="d-flex gap-3 justify-content-end">
+                        <li><a href="#"><img src="assets/images/face-book-icon.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="assets/images/insta-icon.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="assets/images/twitter-icon.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="assets/images/linkedln-icon.svg" alt="linkedln"></a></li>
+                        <li><a href="#"><img src="assets/images/youtube-icon.svg" alt="youtube"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--first header end--> 
+
+         <!--second header start-->
+         <div class="second-header-section">
+            <div class="container-xxl heading-wrapper">
+                 <!-- Desktop layout -->
+                  <div class="d-none d-md-flex justify-content-between align-items-center">
+
+                     <!-- Logo -->
+                     <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="logo" width="140px" height="54px">
+                     </a>  
+
+                     <!-- Search Bar with icon -->
+                     <div class="search-bar">
+                        <div class="input-group">
+                           <span class="input-group-text bg-white border-end-0 pe-0">
+                              <img src="assets/images/search-icon.svg" alt="search">
+                           </span>
+                           <input type="text" class="form-control border-start-0 shadow-none" placeholder="Search...">
+                        </div>
+                     </div>
+ 
+                     <!-- Icons -->
+                     <div class="d-flex align-items-center icons">
+                        <button class="icon-btn border-0"><img src="assets/images/heart-icon.svg" alt="heart-image"></button>
+                        <button class="icon-btn border-0 shooping-cart">
+                           <img src="assets/images/shopping-cart-icon.svg" alt="shopping-cart">
+                           <img src="assets/images/shopping-count-icon.svg" alt="shopping-count-icon" class="shopping-count-icon">
+                        </button>
+                        <button class="icon-btn border-0"><img src="assets/images/person-icon.svg" alt="person-icon"></button>
+                     </div>
+                  </div>   
+
+                  <!-- Mobile layout -->
+                  <div class="d-md-none">
+                     <div class="d-flex justify-content-between align-items-center mb-3">
+
+                     <!-- Logo -->
+                     <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="logo" width="140px" height="54px">
+                     </a>  
+
+                     <!-- Icons -->
+                     <div class="d-flex align-items-center icons">
+                        <button class="icon-btn border-0"><img src="assets/images/heart-icon.svg" alt="heart-image"></button>
+                        <button class="icon-btn border-0 shooping-cart">
+                           <img src="assets/images/shopping-cart-icon.svg" alt="shopping-cart">
+                           <img src="assets/images/shopping-count-icon.svg" alt="shopping-count-icon" class="shopping-count-icon">
+                        </button>
+                        <button class="icon-btn border-0"><img src="assets/images/person-icon.svg" alt="person-icon"></button>
+                        </div>
+                     </div>   
+
+                     <!-- Full-width search bar with icon -->
+                     <div class="search-bar m-auto w-100">
+                        <div class="input-group">
+                           <span class="input-group-text bg-white pt-2 pe-2 border-end-0"><img src="assets/images/search-icon.svg" alt="search"></span>
+                           <input type="text" class="form-control border-start-0 ps-0" placeholder="Search...">
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>   
+         <!--second header end-->   
+         
+         <!-- third header Start -->
+         <div class="third-header-section">
+               <nav class="navbar navbar-expand-lg bg-white p-0">
+                  <div class="container-xxl d-flex justify-content-between align-items-center">
+                     
+                     <!-- All Categories-->
+                     <div class="d-none d-lg-block">
+                        <div class="nav-item dropdown">
+                           <a class="dropdown-toggle category-btn description-two" href="#" id="desktopCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="navbar-toggler-icon"></span> All Categories
+                           </a>
+                           <ul class="dropdown-menu mt-3 category-dropdown" aria-labelledby="desktopCategoryDropdown">
+                              <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Camera</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Wings</a></li>
+                              <li><a class="dropdown-item description-two" href="#">Console</a></li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <!-- Toggle Button-->
+                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+
+                     <!--Nav Items-->
+                     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                        <ul class="navbar-nav align-items-lg-center gap-lg-3 w-100 justify-content-lg-end">
+
+                           <!-- Mobile Only: All Categories -->
+                           <li class="nav-item dropdown d-block d-lg-none mt-2">
+                              <a class="nav-link dropdown-toggle description-two" href="#" id="mobileCategoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Categories
+                              </a>
+                              <ul class="dropdown-menu category-dropdown" aria-labelledby="desktopCategoryDropdown">
+                                 <li><a class="dropdown-item description-two" href="#">GPS Auto Drone</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Drone Accessories</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Auto Drones</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Camera</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Wings</a></li>
+                                 <li><a class="dropdown-item description-two" href="#">Console</a></li>
+                              </ul>
+                           </li>
+
+                           <!-- Shared Menu Items -->
+                           <li class="nav-item"><a class="nav-link description-two" href="#">Home</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item"><a class="nav-link description-two" href="#">Products</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item"><a class="nav-link description-two" href="#">About Us</a></li>
+                           <li><span class="header-line">|</span></li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle description-two" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                 <li><a class="dropdown-item" href="#">Contact</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+         </div>
+         <!-- third header end -->
+    </header>
+    
+    <main>
+        <!--page heding start-->
+        <div class="page-heading text-center mb-5">
+            <div class="container-xxl">
+               <div class="row">
+                <div class="col-2">
+                    <img src="assets/images/page-heading-img1.png" alt="drone-img" class="d-none d-lg-block">
+                </div>
+                <div class="col col-12 col-lg-8 text-center">
+                    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item description-one"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active description-one"><a href="#">My Account</a></li>
+                        </ol>
+                    </nav>
+                    <h1 class="heading-two">Manage your Account</h1>
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/page-heading-img2.png" alt="drone-img" class="d-none d-lg-block">
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--page heding end-->
+
+        <!--manage-account-section start-->
+        <div class="manage-account-section section-wrapper pt-0">
+            <div class="container-xxl">
+                <div class="row gx-3 account-row"> 
+                <div class="col-12 col-md-3 border account-left-col h-100">
+                    <!--profile name-->
+                    <div class="profile-name d-flex align-items-center gap-3 mb-3 px-3">
+                        <div class="user-image d-inline-flex">
+                            <img src="assets/images/Account-images/account-user-image.svg" alt="user-image" class="img-fluid rounded-circle" width="48px" height="48px">
+                            <img src="assets/images/Account-images/account-edit-icon.svg" alt="edit-pen" class="img-fluid edit-pen-icon" width="20px" height="20px">
+                        </div>
+                        <div class="user-name">
+                            <p class="fw-bold fs-5">Kevin Walter</p>
+                        </div>
+                    </div>
+
+                    <!--tabs-->
+                    <div class="nav flex-column nav-pills text-start" id="account-tabs" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active text-start description-two" id="tab-dashboard" data-bs-toggle="pill" data-bs-target="#pane-dashboard" type="button" role="tab"><img src="assets/images/Account-images/Desktop-icon.svg" alt="desktop-icon" class="pe-2">Dashboard</button>
+                        <button class="nav-link text-start description-two" id="tab-order" data-bs-toggle="pill" data-bs-target="#pane-order" type="button" role="tab"><img src="assets/images/Account-images/Order-History-icon.svg" alt="order-icon" class="pe-2">Order History</button>
+                        <button class="nav-link text-start description-two" id="tab-cards" data-bs-toggle="pill" data-bs-target="#pane-cards" type="button" role="tab"><img src="assets/images/Account-images/Cards-Payment-icon.svg" alt="card-icon" class="pe-2">Cards & Payment</button>
+                        <button class="nav-link text-start description-two" id="tab-history" data-bs-toggle="pill" data-bs-target="#pane-history" type="button" role="tab"><img src="assets/images/Account-images/Browsing-History-icon.svg" alt="History-icon" class="pe-2">Browsing History</button>
+                        <button class="nav-link text-start description-two" id="tab-returns" data-bs-toggle="pill" data-bs-target="#pane-returns" type="button" role="tab"><img src="assets/images/Account-images/Return-Order-icon.svg" alt="return-icon" class="pe-2">Return Order</button>
+                        <button class="nav-link text-start description-two" id="tab-profile" data-bs-toggle="pill" data-bs-target="#pane-profile" type="button" role="tab"><img src="assets/images/Account-images/Profile-icon.svg" alt="Profile-icon" class="pe-2">Profile</button>
+                        <button class="nav-link text-start description-two" id="tab-logout" data-bs-toggle="pill" data-bs-target="#pane-logout" type="button" role="tab"><img src="assets/images/Account-images/SignOut.svg" alt="log-out-icon" class="pe-2">Log-out</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 account-right-col">
+                    <div class="tab-content" id="account-tabs-content">
+                        <div class="tab-pane fade show active" id="pane-dashboard" class="dashboard-page" role="tabpanel" aria-labelledby="tab-dashboard">
+                            <p class="product-title fs-5 mb-2">Hello, Kevin</p>
+                            <p class="description-one fs-6 lh-sm mb-3">From your account dashboard, you can easily check & view your <span class="text-primary">Recent Orders</span>, manage your <span class="text-primary">Shipping and Billing Addresses</span> and edit your <span class="text-primary">Password</span> and <span class="text-primary">Account Details.</span></p>
+
+                            <div class="info-cards border-bottom pb-4">
+                                <div class="d-flex flex-wrap justify-content-between gap-3">
+                                    
+                                    <!-- Card 1: Personal Info -->
+                                    <div class="card p-0 info-card-col border-gray flex-grow-1" style="flex: 1 1 290px; max-width: 100%;">
+                                    <h5 class="card-header bg-white description-one fs-6 text-uppercase text-dark">Personal Information</h5>
+                                    <div class="card-body">
+                                        <div class="user-info d-flex gap-3 mb-3">
+                                        <img src="assets/images/Account-images/account-user-image.svg" alt="user-image">
+                                        <div class="user-name">
+                                            <h5 class="heading-two fs-5 lh-sm">Kevin Walter</h5>
+                                            <p class="description-two text-muted">Dhaka - 1207, Bangladesh</p>
+                                        </div>
+                                        </div>
+                                        <div class="user-details">
+                                        <p class="description-two mb-2">Email: <span class="text-muted">kevin.gilbert@gmail.com</span></p>
+                                        <p class="description-two mb-2">Sec Email: <span class="text-muted">kevin12345@gmail.com</span></p>
+                                        <p class="description-two mb-3">Phone: <span class="text-muted">+1-202-555-0118</span></p>
+                                        <a href="#" class="text-primary fw-normal fs-6">EDIT PROFILE</a>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card 2: Billing Address -->
+                                    <div class="card p-0 info-card-col border-gray flex-grow-1" style="flex: 1 1 290px; max-width: 100%;">
+                                    <h5 class="card-header bg-white description-one fs-6 text-uppercase text-dark">Billing Address</h5>
+                                    <div class="card-body">
+                                        <p class="fw-semibold mb-1">Kevin Gilbert</p>
+                                        <ul class="ps-4 text-muted mb-2" style="list-style-type: disc;">
+                                        <li class="mb-2">
+                                            East Tejturi Bazar, Word No. 04, Road No. 13/x, House no. 1320/C, Flat No. 5D, Dhaka – 1200, Bangladesh
+                                        </li>
+                                        <li>
+                                            West House no. 150/C, Flat No. 5D, Dhaka – 1200, Bangladesh
+                                        </li>
+                                        </ul>
+                                        <a href="#" class="text-primary fw-normal fs-6">ADD ADDRESS</a>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card 3: Orders -->
+                                    <div class="card p-0 border-0 bg-transparent info-card-col flex-grow-1" style="flex: 1 1 270px; max-width: 100%;">
+                                    <div class="total-Orders d-flex gap-3 p-3 mb-3">
+                                        <img src="assets/images/Account-images/total-order-icon.svg" alt="order">
+                                        <div class="order-info">
+                                        <h4 class="heading-two fs-5 lh-sm">154</h4>
+                                        <p class="description-one fs-6">Total Orders</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pending-Orders d-flex gap-3 p-3 mb-3">
+                                        <img src="assets/images/Account-images/pending-order-icon.svg" alt="pending-order-icon">
+                                        <div class="order-info">
+                                        <h4 class="heading-two fs-5 lh-sm">05</h4>
+                                        <p class="description-one fs-6">Pending Orders</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="completed-order d-flex gap-3 p-3 mb-3">
+                                        <img src="assets/images/Account-images/completed-order-icon.svg" alt="completed-order-icon">
+                                        <div class="order-info">
+                                        <h4 class="heading-two fs-5 lh-sm">149</h4>
+                                        <p class="description-one fs-6">Completed Orders</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--payment-cards-->
+                            <div class="payment-cards py-4 border-bottom">
+                                <div class="card">
+                                    <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                        <p>Payment Option</p>
+                                        <a href="#">Add Card <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                    <div class="card-body d-flex flex-wrap gap-4 m-auto m-md-0">
+                                        <img src="assets/images/Account-images/Visa.svg" alt="visa-card">
+                                        <img src="assets/images/Account-images/Mastercard.svg" alt="Mastercard">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--recent orders-->
+                            <div class="recent-orders-list py-4 border-bottom">
+                                <div class="card">
+                                    <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                        <p>RECENT ORDERS</p>
+                                        <a href="#">View All <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead class="border ">
+                                                    <tr>
+                                                        <th scope="col" class="description-one">Order ID</th>
+                                                        <th scope="col" class="description-one">Status</th>
+                                                        <th scope="col" class="description-one">Date</th>
+                                                        <th scope="col" class="description-one">Total</th>
+                                                        <th scope="col" class="description-one">Action</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="border-0">
+                                                    <tr class="description-one">
+                                                        <td>#96459761</td>
+                                                        <td class="text-warning">IN PROGRESS</td>
+                                                        <td>Dec 30, 2019 05:18</td>
+                                                        <td>$1,500 (5 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (11 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#95214362</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Mar 20, 2019 23:14</td>
+                                                        <td>$160 (3 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$2,300 (2 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Dec 30, 2019 07:52</td>
+                                                        <td>$70 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+                                                    
+                                                    <tr class="description-one">
+                                                        <td>#673971743</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Dec 7, 2019 23:26</td>
+                                                        <td>$220 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--browsing history-->
+                            <div class="browsing-history py-4">
+                                <div class="card">
+                                    <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                        <p>BROWSING HISTORY</p>
+                                        <a href="#">View All <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <!--Bestseller Products start-->
+                                        <div class="bestseller-product-section pt-4 drone-category-slider">
+                                            <div class="container-xxl text-center">
+                                                <div class="swiper productSwiper">
+                                                    <div class="swiper-wrapper">
+
+                                                        <!--slide 1-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product1.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">GPS Auto Drone</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+
+                                                        <!--slide 2-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product2.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Drone Wings</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+
+                                                        <!--slide 3-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product3.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Auto Drone</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+
+                                                            <!--slide 4-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product4.png" class="mt-5">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Drone Wings</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+
+                                                        <!--slide 1-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product1.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">GPS Auto Drone</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+
+                                                        <!--slide 2-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product2.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Drone Wings</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+
+                                                        <!--slide 3-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product3.png">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Auto Drone</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+
+                                                            <!--slide 4-->
+                                                        <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                                                            <div class="product-img">
+                                                                <img src="assets/images/product4.png" class="mt-5">
+                                                            </div>
+                                                            <div class="product-info d-flex justify-content-between align-items-center">
+                                                                <div class="name-price">
+                                                                    <h6 class="product-title fs-5">Drone Wings</h6>
+                                                                    <p class="current-price fs-5">$20.00 <span class="old-price">$99.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="slider-control d-flex align-items-center justify-content-center mt-4">
+                                                        <!-- Prev Button -->
+                                                        <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                                            <i class="fa-solid fa-arrow-left"></i>
+                                                        </div>
+
+                                                        <!-- Pagination in the middle -->
+                                                        <div class="swiper-pagination d-flex mb-2"></div>
+
+                                                        <!-- Next Button -->
+                                                        <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                        </div>
+                                                        </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <!--Bestseller Products end-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pane-order" role="tabpanel" aria-labelledby="tab-order">
+                            <!--recent orders-->
+                            <div class="recent-orders-list border-bottom">
+                                <div class="card">
+                                    <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                        <p>RECENT ORDERS</p>
+                                        <a href="#">View All <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead class="border ">
+                                                    <tr>
+                                                        <th scope="col" class="description-one">Order ID</th>
+                                                        <th scope="col" class="description-one">Status</th>
+                                                        <th scope="col" class="description-one">Date</th>
+                                                        <th scope="col" class="description-one">Total</th>
+                                                        <th scope="col" class="description-one">Action</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="border-0">
+                                                    <tr class="description-one">
+                                                        <td>#96459761</td>
+                                                        <td class="text-warning">IN PROGRESS</td>
+                                                        <td>Dec 30, 2019 05:18</td>
+                                                        <td>$1,500 (5 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (11 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#95214362</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Mar 20, 2019 23:14</td>
+                                                        <td>$160 (3 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$2,300 (2 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Dec 30, 2019 07:52</td>
+                                                        <td>$70 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+                                                    
+                                                    <tr class="description-one">
+                                                        <td>#673971743</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Dec 7, 2019 23:26</td>
+                                                        <td>$220 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                     <tr class="description-one">
+                                                        <td>#95214362</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Mar 20, 2019 23:14</td>
+                                                        <td>$160 (3 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                     <tr class="description-one">
+                                                        <td>#95214362</td>
+                                                        <td class="text-danger">CANCELED</td>
+                                                        <td>Mar 20, 2019 23:14</td>
+                                                        <td>$160 (3 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                     <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                     <tr class="description-one">
+                                                        <td>#71667167</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$80 (1 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$2,300 (2 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+
+                                                    <tr class="description-one">
+                                                        <td>#51746385</td>
+                                                        <td class="text-success">COMPLETED</td>
+                                                        <td>Feb 2, 2019 19:28</td>
+                                                        <td>$2,300 (2 Products)</td>
+                                                        <td class="text-muted">View Details</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                     <!--pagination start-->
+                                        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                                        <ul class="pagination justify-content-center custom-pagination">
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true" class="pagination-icon">&lsaquo;</span>
+                                            </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&rsaquo;</span>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                        </nav>
+
+                                        <!--pagination end-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pane-cards" role="tabpanel" aria-labelledby="tab-cards">
+                            <p>Cards & Payment content goes here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="pane-history" role="tabpanel" aria-labelledby="tab-history">
+                            <p>Browsing History content goes here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="pane-returns" role="tabpanel" aria-labelledby="tab-returns">
+                            <p>Return Order content goes here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="pane-profile" role="tabpanel" aria-labelledby="tab-profile">
+                            <p>Profile content goes here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="pane-logout" role="tabpanel" aria-labelledby="tab-logout">
+                            <p>Log-out content goes here...</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--manage-account-section end-->
+    </main>
+
+   <footer class="section-wrapper pb-0">
+         <div class="container-xxl">
+            <div class="row d-flex justify-content-between gap-4 mb-5">
+
+               <div class="col-12 col-md-5">
+                  <h6 class="heading-two">Subscribe to our newsletter!</h6>
+                  <p class="description-two mb-3">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus</p>
+                  <div class="input-form d-flex gap-4 flex-wrap mb-3">
+                     <input type="text" placeholder="Email here" class="ps-3 col-md-8 col-12">
+                     <a href="#" type="button" class="btn btn-black">Subscribe</i></a>
+                  </div>
+                  <ul class="d-flex gap-3">
+                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+
+               <div class="col-12 col-md-6 d-flex justify-content-between flex-wrap gap-3">
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Our shop</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Drone</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Accessories</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Wishlist</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">My Cart</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">My Account</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Quick Links</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">About US</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Blogs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Contact Us</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-12 col-md-3">
+                     <h5 class="product-title">Support</h5>
+                     <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Help & Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Tearms & Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 description-two">Privacy Policy</a></li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="section-divider mb-3">
+               <span class="line"></span>
+               <div class="logo">
+                  <img src="assets/images/Logo.png" alt="Logo"  width="153px" height="57px"/>
+               </div>
+               <span class="line"></span>
+            </div>
+
+            <div class="copy-right d-flex justify-content-between flex-wrap gap-3 mb-5">
+               <div class="copy-right-text">
+                  <p class="description-two">@2025 - All Rights Reserved by <span class="description-two">SkyTronics.</span></p>
+               </div>
+               <div class="payment-image d-flex gap-4 flex-wrap">
+                  <img src="assets/images/stripe-img.svg" alt="stripe-img">
+                  <img src="assets/images/paypal-img.svg" alt="paypal-img">
+                  <img src="assets/images/visa-img.svg" alt="visa-img">
+                  <img src="assets/images/mastercard-img.svg" alt="mastercard-img">
+               </div>
+            </div>
+
+         </div>
+   </footer>
+
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+        const productSwiper = new Swiper(".productSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        loop: false,
+        centeredSlides: false,
+        navigation: {
+            nextEl: ".silder-next",
+            prevEl: ".silder-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            120: { slidesPerView: 1 },
+            320: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+        },
+        });
+
+
+   </script>
+    <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+    <!-- build:js -->
+    <script src="dist/assets/js/custom.min.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

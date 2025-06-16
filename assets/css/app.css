@@ -12241,35 +12241,48 @@ main {
             STYLE
 
                   START*/
-.nav-tabs {
+.tab-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.tab-scroll-wrapper .nav-tabs {
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+  min-width: -moz-max-content;
+  min-width: max-content;
   scrollbar-width: thin;
   scrollbar-color: #ccc transparent;
-  border: 2px solid;
 }
-.nav-tabs .heading-two {
-  color: #909090;
-  font-size: 18px;
-}
-.nav-tabs .description-two {
-  color: #909090;
-}
-.nav-tabs::-webkit-scrollbar {
+.tab-scroll-wrapper .nav-tabs::-webkit-scrollbar {
   height: 4px;
 }
-.nav-tabs::-webkit-scrollbar-thumb {
+.tab-scroll-wrapper .nav-tabs::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 10px;
 }
-.nav-tabs .nav-link.active {
+.tab-scroll-wrapper .nav-tabs .nav-item {
+  flex: 0 0 auto;
+}
+.tab-scroll-wrapper .nav-tabs .nav-link {
+  white-space: nowrap;
+}
+.tab-scroll-wrapper .nav-tabs .nav-link.active {
   border: none;
   background-color: inherit;
   border-bottom: 2px solid #029FAE !important;
 }
-.nav-tabs .nav-link.active .heading-two {
+.tab-scroll-wrapper .nav-tabs .nav-link.active .heading-two {
   color: #1E1E1E;
 }
-.nav-tabs .nav-link {
-  white-space: nowrap;
+.tab-scroll-wrapper .nav-tabs .nav-link .heading-two {
+  color: #909090;
+  font-size: 18px;
+  margin: 0;
+}
+.tab-scroll-wrapper .nav-tabs .nav-link .description-two {
+  color: #909090;
+  margin: 0;
 }
 
 .input-responsive {
@@ -12343,7 +12356,7 @@ main {
   border-radius: 10px;
 }
 
-/*wishlist PAGE
+/*WISHLIST PAGE
 
             STYLE
 
@@ -12362,4 +12375,103 @@ main {
 .wishlist-product .gray-btn {
   background-color: #909090;
   border: transparent;
+}
+
+/*ACCOUNT PAGE
+
+            STYLE
+
+                  START*/
+.manage-account-section .container-xxl .account-row .account-left-col {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.manage-account-section .container-xxl .account-row .account-left-col .user-image {
+  position: relative;
+}
+.manage-account-section .container-xxl .account-row .account-left-col .user-image .edit-pen-icon {
+  position: absolute;
+  bottom: 0px;
+  right: -5px;
+}
+.manage-account-section .container-xxl .account-row .account-left-col .nav-pills .description-two {
+  color: #909090;
+}
+.manage-account-section .container-xxl .account-row .account-left-col .nav-pills .nav-link img {
+  filter: grayscale(1);
+}
+.manage-account-section .container-xxl .account-row .account-left-col .nav-pills .nav-link.active img {
+  filter: brightness(0) invert(1);
+}
+.manage-account-section .container-xxl .account-row .account-left-col .nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #029FAE;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .total-Orders {
+  background-color: #EAF6FE;
+  border-radius: 10px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .pending-Orders {
+  background-color: #FFF3EB;
+  border-radius: 10px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .completed-order {
+  background-color: #EAF7E9;
+  border-radius: 10px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .table-responsive thead {
+  background: rgba(144, 144, 144, 0.1019607843);
+  border-bottom: 1px solid rgba(144, 144, 144, 0.2);
+}
+.manage-account-section .container-xxl .account-row .account-right-col .table-responsive thead .description-one {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .table-responsive tbody td {
+  border: none;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .table-responsive tbody .description-one {
+  font-size: 14px;
+  color: #1E1E1E;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body {
+  /* Ensure pagination bullets are horizontal and centered */
+  /* Style for bullets */
+  /* Active bullet style */
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .product-img {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px;
+  background: rgba(2, 159, 174, 0.0509803922);
+  position: relative;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .product-info {
+  width: 200px;
+  margin-top: 20px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .slider-control {
+  gap: 130px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .swiper-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #909090;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .browsing-history .card-body .swiper-pagination-bullet-active {
+  background-color: #029FAE;
+  width: 12px;
+  height: 12px;
 }

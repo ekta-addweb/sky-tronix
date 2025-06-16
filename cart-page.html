@@ -175,7 +175,8 @@
     <main>
         <!--page heding start-->
         <div class="page-heading text-center mb-5">
-            <div class="row">
+            <div class="container-xxl">
+               <div class="row">
                 <div class="col-2">
                     <img src="assets/images/page-heading-img1.png" alt="drone-img" class="d-none d-lg-block">
                 </div>
@@ -192,30 +193,35 @@
                     <img src="assets/images/page-heading-img2.png" alt="drone-img" class="d-none d-lg-block">
                 </div>
             </div>
+            </div>
         </div>
         <!--page heding end-->
 
         <div class="container-xxl py-4">
-            <ul class="nav nav-tabs d-flex flex-nowrap overflow-auto border-0 gap-2" role="tablist">
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link active w-100 text-start" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">01 My Cart</p>
-                  <p class="description-two">Manage Your Items List</p>
-                </button>
-              </li>
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link w-100 text-start" id="checkout-tab" data-bs-toggle="tab" data-bs-target="#checkout" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">02 Shipping & Checkout</p>
-                  <p class="description-two">Checkout Your Items List</p>
-                </button>
-              </li>
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link w-100 text-start" id="confirmation-tab" data-bs-toggle="tab" data-bs-target="#confirmation" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">03 Confirmation</p>
-                  <p class="description-two">Review And Submit Your Order</p>
-                </button>
-              </li>
-            </ul>
+
+            <div class="tab-scroll-wrapper">
+               <ul class="nav nav-tabs d-flex flex-nowrap border-0 gap-2" role="tablist">
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link active w-100 text-start" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">01 My Cart</p>
+                     <p class="description-two">Manage Your Items List</p>
+                  </button>
+               </li>
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link w-100 text-start" id="checkout-tab" data-bs-toggle="tab" data-bs-target="#checkout" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">02 Shipping & Checkout</p>
+                     <p class="description-two">Checkout Your Items List</p>
+                  </button>
+               </li>
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link w-100 text-start" id="confirmation-tab" data-bs-toggle="tab" data-bs-target="#confirmation" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">03 Confirmation</p>
+                     <p class="description-two">Review And Submit Your Order</p>
+                  </button>
+               </li>
+               </ul>
+            </div>
+            
          
             <div class="tab-content mt-3 section-wrapper pt-0">
               <div class="tab-pane fade active show" id="cart" role="tabpanel">
@@ -485,50 +491,50 @@
                   <div class="col-12 col-md-8">
                      <h5 class="fw-bold fs-4 mb-3">Payment options</h5>
 
-                     <div class="payment-options d-flex justify-content-between p-4 bg-white rounded border flex-wrap">
+                     <div class="payment-options row g-3 p-4 bg-white rounded border">
 
-                        <!--col-1-->
-                        <div class="cash text-center">
+                        <!-- Cash on Delivery -->
+                        <div class="col-6 col-md-4 col-lg-3 text-center border-end">
                            <img src="assets/images/cart-images/Dollar.svg" alt="dollar-image" class="mb-1">
                            <p class="description-one text-dark fs-6">Cash on Delivery</p>
                            <div class="form-check d-flex justify-content-center mb-2">
-                              <input class="form-check-input text-center" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                           <input class="form-check-input" type="radio" name="paymentOption" checked>
                            </div>
                         </div>
 
-                       <!--col-2-->
-                        <div class="stripe text-center">
-                           <img src="assets/images/cart-images/stripe.svg" alt="dollar-image" class="mb-1">
+                        <!-- Stripe -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/stripe.svg" alt="stripe-image" class="mb-1" width="80px">
                            <p class="description-one text-dark fs-6">Stripe</p>
                            <div class="form-check d-flex justify-content-center mb-2">
-                              <input class="form-check-input text-center" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+                           <input class="form-check-input" type="radio" name="paymentOption">
                            </div>
                         </div>
 
-                        <!--col-3-->
-                        <div class="cash text-center ">
-                           <img src="assets/images/cart-images/Paypal-image.svg" alt="dollar-image" class="mb-1">
+                        <!-- PayPal -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/Paypal-image.svg" alt="paypal-image" class="mb-1">
                            <p class="description-one text-dark fs-6">Paypal</p>
                            <div class="form-check d-flex justify-content-center mb-2">
-                              <input class="form-check-input text-center" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <input class="form-check-input" type="radio" name="paymentOption">
                            </div>
                         </div>
 
-                        <!--col-4-->
-                        <div class="cash text-center">
-                           <img src="assets/images/cart-images/amazon.svg" alt="dollar-image" class="mb-1">
+                        <!-- Amazon Pay -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/amazon.svg" alt="amazon-image" class="mb-1">
                            <p class="description-one text-dark fs-6">Amazon Pay</p>
                            <div class="form-check d-flex justify-content-center mb-2">
-                              <input class="form-check-input text-center" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <input class="form-check-input" type="radio" name="paymentOption">
                            </div>
                         </div>
 
-                        <!--col-5-->
-                        <div class="cash text-center">
-                           <img src="assets/images/cart-images/CreditCard.svg" alt="dollar-image" class="mb-1">
-                           <p class="description-one text-dark fs-6">Debid/Credit Card</p>
+                        <!-- Debit/Credit Card -->
+                        <div class="col-6 col-md-4 col-lg-3 text-center">
+                           <img src="assets/images/cart-images/CreditCard.svg" alt="card-image" class="mb-1">
+                           <p class="description-one text-dark fs-6">Debit/Credit Card</p>
                            <div class="form-check d-flex justify-content-center mb-2">
-                              <input class="form-check-input text-center" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <input class="form-check-input" type="radio" name="paymentOption">
                            </div>
                         </div>
 
@@ -958,6 +964,7 @@
 
          </div>
    </footer>
+
    <!-- Swiper JS -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script>

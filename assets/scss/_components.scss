@@ -1109,47 +1109,62 @@ main
             
                   START*/
 
-.nav-tabs {
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
-  border: 2px solid ;
+.tab-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 
-  .heading-two
-  {
-    color: $dark-silver;
-    font-size: 18px;
-  }
-  .description-two
-  {
-    color: $dark-silver;
-  }
+  .nav-tabs {
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    min-width: max-content;
 
-  &::-webkit-scrollbar {
-    height: 4px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-  }
-  .nav-link.active 
-  {
-    border: none;
-    background-color: inherit;
-    border-bottom: 2px solid $electric-blue !important;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
 
-    .heading-two
-    {
-      color: $carbon-black;
+    &::-webkit-scrollbar {
+      height: 4px;
     }
-  }
-  .nav-link {
-    white-space: nowrap; 
+
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    .nav-item {
+      flex: 0 0 auto;
+    }
+
+    .nav-link {
+      white-space: nowrap;
+
+      &.active {
+        border: none;
+        background-color: inherit;
+        border-bottom: 2px solid $electric-blue !important;
+
+        .heading-two {
+          color: $carbon-black;
+        }
+      }
+
+      .heading-two {
+        color: $dark-silver;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .description-two {
+        color: $dark-silver;
+        margin: 0;
+      }
+    }
   }
 }
 
 .input-responsive {
-  width: 90%; // default width
-
+  width: 90%;
+  
   @media (max-width: 576px) {
     width: 100% !important;
   }
@@ -1228,7 +1243,7 @@ main
 }
 
 
-/*wishlist PAGE
+/*WISHLIST PAGE
 
             STYLE
             
@@ -1258,4 +1273,153 @@ main
       background-color: $dark-silver;
       border: transparent;
     }
+}
+
+/*ACCOUNT PAGE
+
+            STYLE
+            
+                  START*/
+
+.manage-account-section
+{
+  .container-xxl  
+  {
+    .account-row
+    {
+
+      //account-left-col
+      .account-left-col
+      {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $white;
+        box-shadow: 0px 0px 8px 0px #00000026;
+        .user-image
+        {
+          position: relative;
+          .edit-pen-icon
+          {
+            position: absolute;
+            bottom: 0px;
+            right: -5px;
+          }
+        }
+
+        //nav-tabs-style
+        .nav-pills
+        {
+          .description-two
+          {
+            color: $dark-silver;
+          }
+          .nav-link img {
+            filter: grayscale(1);
+          }
+          .nav-link.active img {
+            filter: brightness(0) invert(1);
+          }
+          .nav-link.active
+          {
+            color: $white;
+            background-color: $electric-blue;
+            border-radius: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+      //account-right-col
+      .account-right-col
+      {
+        //dashboard-page style
+        .total-Orders
+        {
+          background-color: #EAF6FE;
+          border-radius: 10px;
+        }
+        .pending-Orders
+        {
+          background-color: #FFF3EB;
+          border-radius: 10px;
+        }
+        .completed-order
+        {
+          background-color: #EAF7E9;
+          border-radius: 10px;
+        }
+        .table-responsive
+        {
+          thead{
+            background: #9090901A;
+            border-bottom: 1px solid #90909033;
+            .description-one
+            {
+              font-size: 12px;
+              text-transform: uppercase;
+            }
+          }
+          tbody
+          {
+            td{
+              border: none;
+            }
+            .description-one
+            {
+              font-size: 14px;
+              color: $carbon-black;
+            }
+          }
+        }
+
+        .browsing-history
+        {
+          .card-body
+          {
+            .product-img
+            {
+              width: 200px;
+              height: 220px;
+              border-radius: 20px;
+              background: #029FAE0D;
+              position: relative;
+            }
+            .product-info
+            {
+              width: 200px;
+              margin-top: 20px;
+            }
+            .slider-control
+            {
+              gap: 130px;
+            }
+            /* Ensure pagination bullets are horizontal and centered */
+            .swiper-pagination {
+              display: flex !important;
+              align-items: center;
+              justify-content: center;
+            }
+
+            /* Style for bullets */
+            .swiper-pagination-bullet {
+              width: 8px;
+              height: 8px;
+              background-color: $dark-silver;
+              border-radius: 50%;
+              opacity: 1;
+              transition: background-color 0.3s ease;
+            }
+
+            /* Active bullet style */
+            .swiper-pagination-bullet-active {
+              background-color: $electric-blue;
+              width: 12px;
+              height: 12px;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
 }

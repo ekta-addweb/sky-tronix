@@ -173,7 +173,8 @@
     <main>
         <!--page heding start-->
         <div class="page-heading text-center mb-5">
-            <div class="row">
+            <div class="container-xxl">
+               <div class="row">
                 <div class="col-2">
                     <img src="assets/images/page-heading-img1.png" alt="drone-img" class="d-none d-lg-block">
                 </div>
@@ -190,33 +191,38 @@
                     <img src="assets/images/page-heading-img2.png" alt="drone-img" class="d-none d-lg-block">
                 </div>
             </div>
+            </div>
         </div>
         <!--page heding end-->
 
         <div class="container-xxl py-4">
-            <ul class="nav nav-tabs d-flex flex-nowrap overflow-auto border-0 gap-2" role="tablist">
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link active w-100 text-start" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">01 My Cart</p>
-                  <p class="description-two">Manage Your Items List</p>
-                </button>
-              </li>
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link w-100 text-start" id="checkout-tab" data-bs-toggle="tab" data-bs-target="#checkout" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">02 Shipping & Checkout</p>
-                  <p class="description-two">Checkout Your Items List</p>
-                </button>
-              </li>
-              <li class="nav-item flex-fill" role="presentation">
-                <button class="nav-link w-100 text-start" id="confirmation-tab" data-bs-toggle="tab" data-bs-target="#confirmation" type="button" role="tab">
-                  <p class="heading-two fs-5 lh-sm mb-2">03 Confirmation</p>
-                  <p class="description-two">Review And Submit Your Order</p>
-                </button>
-              </li>
-            </ul>
+
+            <div class="tab-scroll-wrapper">
+               <ul class="nav nav-tabs d-flex flex-nowrap border-0 gap-2" role="tablist">
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link active w-100 text-start" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">01 My Cart</p>
+                     <p class="description-two">Manage Your Items List</p>
+                  </button>
+               </li>
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link w-100 text-start" id="checkout-tab" data-bs-toggle="tab" data-bs-target="#checkout" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">02 Shipping & Checkout</p>
+                     <p class="description-two">Checkout Your Items List</p>
+                  </button>
+               </li>
+               <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link w-100 text-start" id="confirmation-tab" data-bs-toggle="tab" data-bs-target="#confirmation" type="button" role="tab">
+                     <p class="heading-two fs-5 lh-sm mb-2">03 Confirmation</p>
+                     <p class="description-two">Review And Submit Your Order</p>
+                  </button>
+               </li>
+               </ul>
+            </div>
+            
          
             <div class="tab-content mt-3 section-wrapper pt-0">
-              <div class="tab-pane fade show active" id="cart" role="tabpanel">
+              <div class="tab-pane fade active show" id="cart" role="tabpanel">
                   <div class="row">
 
                      <!--left side col-->
@@ -477,228 +483,164 @@
                   </div>
               </div>
 
-
               <div class="tab-pane fade" id="checkout" role="tabpanel">
-               <div class="row">
+               <div class="row pt-4">
+                  <!--left side col-->
+                  <div class="col-12 col-md-8">
+                     <h5 class="fw-bold fs-4 mb-3">Payment options</h5>
 
-                     <!--left side col-->
-                     <div class="cart-details col-12 col-md-8">
+                     <div class="payment-options row g-3 p-4 bg-white rounded border">
 
-                     <div class="cart-title d-none d-md-flex py-4 border-bottom">
-                        <div class="col-md-5 fw-medium fs-6">Product</div>
-                        <div class="col-md-2 fw-medium fs-6 text-center">Price</div>
-                        <div class="col-md-3 fw-medium fs-6 text-center">Quantity</div>
-                        <div class="col-md-2 fw-medium fs-6">Subtotal</div>
+                        <!-- Cash on Delivery -->
+                        <div class="col-6 col-md-4 col-lg-3 text-center border-end">
+                           <img src="assets/images/cart-images/Dollar.svg" alt="dollar-image" class="mb-1">
+                           <p class="description-one text-dark fs-6">Cash on Delivery</p>
+                           <div class="form-check d-flex justify-content-center mb-2">
+                           <input class="form-check-input" type="radio" name="paymentOption" checked>
+                           </div>
+                        </div>
+
+                        <!-- Stripe -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/stripe.svg" alt="stripe-image" class="mb-1" width="80px">
+                           <p class="description-one text-dark fs-6">Stripe</p>
+                           <div class="form-check d-flex justify-content-center mb-2">
+                           <input class="form-check-input" type="radio" name="paymentOption">
+                           </div>
+                        </div>
+
+                        <!-- PayPal -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/Paypal-image.svg" alt="paypal-image" class="mb-1">
+                           <p class="description-one text-dark fs-6">Paypal</p>
+                           <div class="form-check d-flex justify-content-center mb-2">
+                           <input class="form-check-input" type="radio" name="paymentOption">
+                           </div>
+                        </div>
+
+                        <!-- Amazon Pay -->
+                        <div class="col-6 col-md-4 col-lg-2 text-center border-end">
+                           <img src="assets/images/cart-images/amazon.svg" alt="amazon-image" class="mb-1">
+                           <p class="description-one text-dark fs-6">Amazon Pay</p>
+                           <div class="form-check d-flex justify-content-center mb-2">
+                           <input class="form-check-input" type="radio" name="paymentOption">
+                           </div>
+                        </div>
+
+                        <!-- Debit/Credit Card -->
+                        <div class="col-6 col-md-4 col-lg-3 text-center">
+                           <img src="assets/images/cart-images/CreditCard.svg" alt="card-image" class="mb-1">
+                           <p class="description-one text-dark fs-6">Debit/Credit Card</p>
+                           <div class="form-check d-flex justify-content-center mb-2">
+                           <input class="form-check-input" type="radio" name="paymentOption">
+                           </div>
+                        </div>
+
                      </div>
 
-                     <!--row 1-->
-                     <div class="cart-product row py-4 border-bottom gx-3 gy-3 align-items-start">
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
+                     <h5 class="fw-bold fs-4 py-3">Shipping details</h5>
+                     <div class="shipping-form">
 
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-1.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">Auto Drone</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
+                        <div class="name d-flex flex-wrap mb-4">
+                           <div class="col-12 col-sm-6 gap-2">
+                              <label class="d-block description-two">First Name <span class="text-danger">*</span></label>
+                              <input type="text" placeholder="Enter First Name" class="form-control input-responsive">
 
                            </div>
+
+                           <div class="col-12 col-sm-6">
+                              <label class="d-block description-two">Last Name <span class="text-danger">*</span></label>
+                              <input type="text" placeholder="Enter Last Name" class="form-control input-responsive">
                            </div>
                         </div>
 
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-1.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">Auto Drone</h5>
+                        <div class="email-field mb-4">
+                           <label class="d-block description-two">Email Address <span class="text-danger">*</span></label>
+                              <input type="text" placeholder="House number and street name" class="mb-3 input-responsive2">
+                              <input type="text" placeholder="Apartment, suite, unit, etc. (optional)" class="input-responsive2">
+                        </div>
+
+                        <div class="pin-code-country d-flex flex-wrap mb-4">
+                           <div class="col-12 col-sm-6 gap-2">
+                              <label class="d-block description-two">Town / City  <span class="text-danger">*</span></label>
+                              <input type="text" placeholder="Enter town/city" class="form-control input-responsive">
                            </div>
 
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
+                           <div class="col-12 col-sm-6">
+                              <label class="d-block description-two mb-2">State<span class="text-danger">*</span></label>
+                              <select class="form-select input-responsive">
+                                 <option selected disabled>Select an option…</option>
+                                 <option value="india">Gujarat</option>
+                                 <option value="usa">Punjab</option>
+                                 <option value="uk">Rajasthan</option>
+                                 <option value="canada">Madhya Pradesh</option>
+                                 <option value="australia">Himachal Pradesh</option>
+                              </select>
                            </div>
                         </div>
+
+
+                         <div class="pin-code-country d-flex flex-wrap mb-4">
+                           <div class="col-12 col-sm-6 gap-2">
+                              <label class="d-block description-two">PIN Code <span class="text-danger">*</span></label>
+                              <input type="text" placeholder="Enter postcode/zip" class="form-control input-responsive">
+                           </div>
+
+                           <div class="col-12 col-sm-6">
+                              <label class="d-block description-two mb-2">Country / Region <span class="text-danger">*</span></label>
+                              <select class="form-select input-responsive">
+                                 <option selected disabled>India</option>
+                                 <option value="india">India</option>
+                                 <option value="usa">United States</option>
+                                 <option value="uk">United Kingdom</option>
+                                 <option value="canada">Canada</option>
+                                 <option value="australia">Australia</option>
+                              </select>
+                           </div>
+                        </div>
+
+                        <div class="order-note">
+                           <label class="d-block description-two">PIN Code <span class="text-danger">*</span></label>
+                           <textarea name="" placeholder="Notes About Your Order, e.g. Special Notes For Delivery" id="" rows="3" style="width: 95%;"></textarea>
+                        </div>
+
+                        <label class="flex items-center d-flex gap-2 align-items-center">
+                           <input type="checkbox" class="form-checkbox"/>
+                           <span class="description-two mt-2">Bill to a different address?</span>
+                        </label>
+
                      </div>
+                     
+                  </div>
 
-
-
-                     <!--row 2-->
-                     <div class="cart-product row py-4 border-bottom gx-3 gy-3 align-items-start">
-
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
-
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-2.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">GPS Drone</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
-
-                           </div>
-                           </div>
-                        </div>
-
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-2.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">GPS Drone</h5>
-                           </div>
-
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
-                           </div>
-                        </div>
-                     </div>
-
-                     <!--row 3-->
-                     <div class="cart-product row py-4 gx-3 gy-3 align-items-start">
-
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
-
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-3.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">Drone Wings</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
-
-                           </div>
-                           </div>
-                        </div>
-
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-3.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">Drone Wings</h5>
-                           </div>
-
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
-                           </div>
-                        </div>
-                     </div>
-
-                    </div>
-
-                    <!--right side col-->
-                   <div class="cart-price mx-md-auto border">
+                  <!--right side col-->
+                   <div class="cart-price mx-md-auto border h-75">
 
                      <!--subtitle-->
                         <div class="subtotal d-flex justify-content-between border-bottom pb-4">
                            <p class="description-two">Subtotal</p>
                            <h6 class="fw-bold fs-4 text-primary">$45.50</h6>
+                        </div>
+
+                     <!--Product Overtime-->
+                        <div class="product-overview pb-3 border-2 border-bottom">
+                           <p class="description-two fs-5 py-2">Product Overview</p>
+                           <div class="items text-muted fs-6">
+                              <div class="items d-flex justify-content-between pb-2">
+                                 <p>Auto Drone &#10005; 1</p>
+                                 <p>$ 15.50</p>
+                              </div>
+                              
+                              <div class="items d-flex justify-content-between pb-2">
+                                 <p>GPS Drone &#10005; 1</p>
+                                 <p>$ 15.50</p>
+                              </div>
+
+                              <div class="items d-flex justify-content-between pb-2">
+                                 <p>Drone Wings &#10005; 1</p>
+                                 <p>$ 15.50</p>
+                              </div>
+                           </div>
                         </div>
 
                      <!--Coupon code-->
@@ -711,13 +653,10 @@
                         </div>
 
                      <!--address-->
-                     <div class="Shipping-address py-3 border-bottom border-2 d-flex justify-content-between">
+                     <div class="Shipping-address pt-2 d-flex justify-content-between">
                         <p class="description-two text-muted">Shipping</p>
                         <div class="address text-end">
                            <p class="description-two">Free shipping</p>
-                           <p class="description-two">Shipping options will be</p>
-                           <p class="description-two">Updated during Checkout.</p>
-                           <p class="current-price fs-5 text-end text-decoration-underline cour">Change Address</p>
                         </div>
                      </div>
 
@@ -733,274 +672,213 @@
                         <h6 class="fw-bold fs-4 text-primary">$46.50</h6>
                      </div>
 
-                     <a href="#" class="btn btn-info w-100">Checkout</a>
+                     <a href="#" class="btn btn-info w-100">Place Order</a>
                   </div>
 
+               </div>
+
+                  <!--Bestseller Products start-->
+                  <div class="bestseller-product-section pt-4 drone-category-slider">
+                     <div class="container-xxl text-center">
+                        <div class="section-heading d-flex justify-content-between align-items-center gap-3">
+                           <div class="section-title d-flex align-items-center gap-4 flex-wrap">
+                              <h2 class="heading-two">Customer Also Bought</h2>
+                           </div>
+                           <div class="slider-control d-flex align-items-center gap-3">
+                              <div class="silder-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                              <i class="fa-solid fa-arrow-left"></i>
+                              </div>
+                              <div class="silder-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                              <i class="fa-solid fa-arrow-right"></i>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="swiper productSwiper">
+                           <div class="swiper-wrapper">
+
+                           <!--slide 1-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product1.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                                 <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">GPS Auto Drone</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div>  
+
+                           <!--slide 2-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product2.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Drone Wings</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div>  
+
+                           <!--slide 3-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product3.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                                 <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Auto Drone</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div> 
+
+                              <!--slide 4-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product4.png" class="mt-5">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Drone Wings</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div> 
+
+                              <!--slide 1-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product1.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                                 <img src="assets/images/new-Products-Status.svg" alt="new tag" class="status-tag">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">GPS Auto Drone</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div>  
+
+                           <!--slide 2-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product2.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Drone Wings</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div>  
+
+                           <!--slide 3-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product3.png">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                                 <img src="assets/images/sale-Products-Status.svg" alt="new tag" class="status-tag">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Auto Drone</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div> 
+
+                              <!--slide 4-->
+                           <div class="swiper-slide product-slide d-flex flex-column justify-content-center align-items-center text-center">
+                              <div class="product-img">
+                                 <img src="assets/images/product4.png" class="mt-5">
+                                 <img src="assets/images/heart.svg" alt="heart-icon" class="heart-icon">
+                              </div>
+                              <div class="product-info d-flex justify-content-between align-items-center">
+                                 <div class="name-price">
+                                    <h6 class="product-title">Drone Wings</h6>
+                                    <p class="current-price">$20.00 <span class="old-price">$99.00</span></p>
+                                 </div>
+                                 <div class="cart-icon">
+                                    <img src="assets/images/Add-Cart.svg" alt="addtocart">
+                                 </div>
+                              </div>
+                           </div> 
+
+                        </div>
+                     </div>  
+                     </div>
                   </div>
+                  <!--Bestseller Products end-->
               </div>
 
 
               <div class="tab-pane fade" id="confirmation" role="tabpanel">
-               <div class="row">
+                  <div class="confirmation-page text-center pt-5">
+                     <img src="assets/images/cart-images/box.svg" alt="box-image" class="mb-4">
+                     <h5 class="heading-one fs-5 text-capitalize lh-1 mb-3">Thank you for shopping</h5>
+                     <p class="description-two text-muted mb-4">Your order has been successfully placed and is now being processed.</p>
 
-                     <!--left side col-->
-                     <div class="cart-details col-12 col-md-8">
-
-                     <div class="cart-title d-none d-md-flex py-4 border-bottom">
-                        <div class="col-md-5 fw-medium fs-6">Product</div>
-                        <div class="col-md-2 fw-medium fs-6 text-center">Price</div>
-                        <div class="col-md-3 fw-medium fs-6 text-center">Quantity</div>
-                        <div class="col-md-2 fw-medium fs-6">Subtotal</div>
-                     </div>
-
-                     <!--row 1-->
-                     <div class="cart-product row py-4 border-bottom gx-3 gy-3 align-items-start">
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
-
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-1.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">Auto Drone</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
-
-                           </div>
-                           </div>
+                     <div class="order-details text-start col-12 col-md-7 d-flex flex-wrap justify-content-between m-auto bg-white gap-3 mb-4">
+                        <div class="order-number">
+                           <p class="description-one">Order Number</p>
+                           <p class="description-one text-primary">#13119</p>
                         </div>
 
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-1.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">Auto Drone</h5>
-                           </div>
+                        <div class="total-amount">
+                           <p class="description-one">Total</p>
+                           <p class="description-one text-primary">$46.50</p>
+                        </div>
 
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
-                           </div>
+                        <div class="date">
+                           <p class="description-one">Date</p>
+                           <p class="description-one text-primary">24/03/2025</p>
+                        </div>
+                        
+                        <div class="payment">
+                           <p class="description-one">Payment Method</p>
+                           <p class="description-one text-primary">Direct Bank Transfer</p>
                         </div>
                      </div>
 
-
-
-                     <!--row 2-->
-                     <div class="cart-product row py-4 border-bottom gx-3 gy-3 align-items-start">
-
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
-
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-2.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">GPS Drone</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
-
-                           </div>
-                           </div>
-                        </div>
-
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-2.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">GPS Drone</h5>
-                           </div>
-
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
-                           </div>
-                        </div>
-                     </div>
-
-                     <!--row 3-->
-                     <div class="cart-product row py-4 gx-3 gy-3 align-items-start">
-
-                        <!--SM layout -->
-                        <div class="d-block d-md-none w-100">
-                           <div class="row">
-
-                           <div class="col-4 d-flex flex-column align-items-center">
-                              <img src="assets/images/cart-images/cart-product-3.svg" alt="product-image" class="img-fluid mb-2">
-                              <h5 class="fw-bold fs-6 text-center mb-0">Drone Wings</h5>
-                           </div>
-
-                           <!-- Details -->
-                           <div class="col-8">
-
-                              <!-- Price -->
-                              <div class="d-flex justify-content-between mb-2">
-                                 <span class="text-muted">Price :</span>
-                                 <span class="text-primary fw-bold fs-6">$15.00</span>
-                              </div>
-
-                              <!-- Quantity -->
-                              <div class="d-flex justify-content-between align-items-center mb-2">
-                                 <span class="text-muted">Quantity :</span>
-                                 <div class="quantity-box d-inline-flex border">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">−</button>
-                                 <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 25px; height: 25px;">
-                                 <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;">+</button>
-                                 </div>
-                              </div>
-
-                              <!-- Subtotal -->
-                              <div class="d-flex justify-content-between">
-                                 <span class="text-muted">Subtotal</span>
-                                 <span class="text-primary fw-bold fs-6">$15.50</span>
-                              </div>
-
-                           </div>
-                           </div>
-                        </div>
-
-                        <!--MD layout -->
-                        <div class="d-none d-md-flex w-100 align-items-center">
-                           <div class="col-md-5 d-flex align-items-center gap-3">
-                           <img src="assets/images/cart-images/cart-product-3.svg" alt="product-images">
-                           <h5 class="fw-bold fs-5 mb-0">Drone Wings</h5>
-                           </div>
-
-                           <div class="col-md-2 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-3 text-center">
-                           <div class="quantity-box d-inline-flex border">
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">−</button>
-                              <input type="text" value="1" class="form-control border border-secondary text-center p-0" style="width: 40px; height: 40px;" readonly>
-                              <button type="button" class="btn btn-light border border-secondary p-0 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">+</button>
-                           </div>
-                           </div>
-
-                           <div class="col-md-1 text-primary fw-bold fs-5 text-center">$15.50</div>
-
-                           <div class="col-md-1 text-end">
-                              <img src="assets/images/cart-images/delete-icon.svg">
-                           </div>
-                        </div>
-                     </div>
-
-                    </div>
-
-                    <!--right side col-->
-                   <div class="cart-price mx-md-auto border">
-
-                     <!--subtitle-->
-                        <div class="subtotal d-flex justify-content-between border-bottom pb-4">
-                           <p class="description-two">Subtotal</p>
-                           <h6 class="fw-bold fs-4 text-primary">$45.50</h6>
-                        </div>
-
-                     <!--Coupon code-->
-                        <div class="coupon-code pb-4 border-2 border-bottom">
-                           <p class="product-title fs-6 text-secondary py-2">Enter Discount Coupon:</p>
-                           <div class="input-g d-flex justify-content-between">
-                              <input type="text" placeholder="Coupon Code" class="ps-3 col-8">
-                              <button type="button" class="btn btn-secondary rounded">Apply</button>
-                           </div>
-                        </div>
-
-                     <!--address-->
-                     <div class="Shipping-address py-3 border-bottom border-2 d-flex justify-content-between">
-                        <p class="description-two text-muted">Shipping</p>
-                        <div class="address text-end">
-                           <p class="description-two">Free shipping</p>
-                           <p class="description-two">Shipping options will be</p>
-                           <p class="description-two">Updated during Checkout.</p>
-                           <p class="current-price fs-5 text-end text-decoration-underline cour">Change Address</p>
-                        </div>
-                     </div>
-
-                     <!--tax-->
-                     <div class="tax py-3 d-flex justify-content-between border-bottom border-2">
-                        <p class="description-two text-muted">Tax</p>
-                        <p class="description-two">$1.00</p>
-                     </div>
-
-                     <!--total-->
-                     <div class="total d-flex justify-content-between py-3">
-                        <p class="description-two">Total</p>
-                        <h6 class="fw-bold fs-4 text-primary">$46.50</h6>
-                     </div>
-
-                     <a href="#" class="btn btn-info w-100">Checkout</a>
+                     <a href="#" type="button" class="btn btn-info">
+                        Back to my account <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
                   </div>
-
-               </div>
-               
               </div>
+
             </div>
          </div>
 
@@ -1085,6 +963,29 @@
          </div>
    </footer>
 
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+        // Product Swiper
+        const productSwiper = new Swiper(".productSwiper", {
+         slidesPerView: 4,
+         spaceBetween: 24,
+         loop: false,
+         centeredSlides: false,
+         navigation: {
+            nextEl: ".silder-next",
+            prevEl: ".silder-prev",
+         },
+         breakpoints: {
+            120: { slidesPerView: 1},
+            320: { slidesPerView: 1},
+            576: { slidesPerView: 2},
+            768: { slidesPerView: 2},
+            992: { slidesPerView: 3},
+            1200: { slidesPerView: 4},
+         },
+        });
+   </script>
       <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/*.js"></script>
 </body>
