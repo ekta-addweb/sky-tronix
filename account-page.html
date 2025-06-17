@@ -173,29 +173,32 @@
     </header>
     
     <main>
-        <!--page heding start-->
+      <!-- Page Heading start -->
         <div class="page-heading text-center mb-5">
-            <div class="container-xxl">
-               <div class="row">
-                <div class="col-2">
-                    <img src="assets/images/page-heading-img1.png" alt="drone-img" class="d-none d-lg-block">
-                </div>
-                <div class="col col-12 col-lg-8 text-center">
-                    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item description-one"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active description-one"><a href="#">My Account</a></li>
-                        </ol>
-                    </nav>
-                    <h1 class="heading-two">Manage your Account</h1>
-                </div>
-                <div class="col-2">
-                    <img src="assets/images/page-heading-img2.png" alt="drone-img" class="d-none d-lg-block">
-                </div>
+        <div class="container-xxl">
+            <div class="row">
+            <div class="col-2">
+                <img src="assets/images/page-heading-img1.png" alt="drone-img" class="d-none d-lg-block">
+            </div>
+            <div class="col-12 col-lg-8 text-center">
+                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item description-one"><a href="#" class="text-muted">Home</a></li>
+                    <li class="breadcrumb-item description-one"><a href="#" class="text-muted">My Account</a></li>
+                    <li class="breadcrumb-item active description-one d-none text-primary" id="breadcrumb-child"></li>
+                </ol>
+                </nav>
+                <h1 class="heading-two">Manage your Account</h1>
+            </div>
+            <div class="col-2">
+                <img src="assets/images/page-heading-img2.png" alt="drone-img" class="d-none d-lg-block">
             </div>
             </div>
         </div>
-        <!--page heding end-->
+        </div>
+      <!-- Page Heading end -->
+
+
 
         <!--manage-account-section start-->
         <div class="manage-account-section section-wrapper pt-0">
@@ -226,7 +229,7 @@
                 </div>
                 <div class="col-12 col-md-9 account-right-col">
                     <div class="tab-content" id="account-tabs-content">
-                        <div class="tab-pane fade show active" id="pane-dashboard" class="dashboard-page" role="tabpanel" aria-labelledby="tab-dashboard">
+                        <div class="tab-pane fade" id="pane-dashboard" class="dashboard-page" role="tabpanel" aria-labelledby="tab-dashboard">
                             <p class="product-title fs-5 mb-2">Hello, Kevin</p>
                             <p class="description-one fs-6 lh-sm mb-3">From your account dashboard, you can easily check & view your <span class="text-primary">Recent Orders</span>, manage your <span class="text-primary">Shipping and Billing Addresses</span> and edit your <span class="text-primary">Password</span> and <span class="text-primary">Account Details.</span></p>
 
@@ -302,15 +305,55 @@
                             <!--payment-cards-->
                             <div class="payment-cards py-4 border-bottom">
                                 <div class="card">
-                                    <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
-                                        <p>Payment Option</p>
-                                        <a href="#">Add Card <i class="fa-solid fa-arrow-right ps-2"></i></a>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap gap-4 m-auto m-md-0">
-                                        <img src="assets/images/Account-images/Visa.svg" alt="visa-card">
-                                        <img src="assets/images/Account-images/Mastercard.svg" alt="Mastercard">
+                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                    <p>Payment Option</p>
+                                    <a href="#">Add Card <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-payment d-flex gap-4">
+                                        <div class="visa-card border">
+                                            <div class="balance d-flex justify-content-between mb-4 align-items-center">
+                                                <h5 class="product-title text-light fs-6 lh-sm mb-0">$95,400.00 USD</h5>
+                                                <div class="dropdown card-edit-dropdown">
+                                                <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="assets/images/Account-images/DotsThree.svg" alt="dots" class="cursor-pointer">
+                                                </button>
+                                                <ul class="dropdown-menu p-2">
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Edit Card</a></li>
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Delete Card</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <p class="text-uppercase description-two text-light mb-2">Card number</p>
+                                            <p class="description-two text-light fs-5 mb-3">****  ****  ****  3814 <img src="assets/images/Account-images/Copy-icon.svg" alt="copy-image"></p>
+                                            <div class="visa-name d-flex align-items-center justify-content-between">
+                                                <img src="assets/images/Account-images/Visa-icon.svg" alt="visa">
+                                                <p class="description-two text-light fs-6">Kevin Walter</p>
+                                            </div>
+                                        </div>
+                                        <div class="master-card border">
+                                            <div class="balance d-flex justify-content-between mb-4 align-items-center">
+                                                <h5 class="product-title text-light fs-6 lh-sm mb-0">$87, 583.00 USD</h5>
+                                                <div class="dropdown card-edit-dropdown">
+                                                <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="assets/images/Account-images/DotsThree.svg" alt="dots" class="cursor-pointer">
+                                                </button>
+                                                <ul class="dropdown-menu p-2">
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Edit Card</a></li>
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Delete Card</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <p class="text-uppercase description-two text-light mb-2">Card number</p>
+                                            <p class="description-two text-light fs-5 mb-3">****  ****  ****  1761 <img src="assets/images/Account-images/Copy-icon.svg" alt="copy-image"></p>
+                                            <div class="visa-name d-flex align-items-center justify-content-between">
+                                                <img src="assets/images/Account-images/mastercard-image.svg" alt="visa">
+                                                <p class="description-two text-light fs-6">Kevin Walter</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                             
                             <!--recent orders-->
@@ -695,16 +738,314 @@
                         </div>
 
                         <div class="tab-pane fade" id="pane-cards" role="tabpanel" aria-labelledby="tab-cards">
-                            <p>Cards & Payment content goes here...</p>
+                            <div class="card">
+                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                    <p>Payment Option</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addCardModal">Add Card <i class="fa-solid fa-arrow-right ps-2"></i></a>
+
+                                    <!-- Add Card Modal -->
+                                    <div class="modal fade" id="addCardModal" tabindex="-1" aria-labelledby="addCardModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title description-two" id="addCardModalLabel">Add New Card</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <!-- Modal Body -->
+                                            <div class="modal-body">
+                                                <!-- You can add your form fields here -->
+                                                <form>
+                                                <div class="mb-3">
+                                                    <label for="cardNumber" class="form-label text-capitalize description-two text-muted">Name on Card</label>
+                                                    <input type="text" class="form-control" id="cardNumber" style="height: 44px;">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="expiry" class="form-label text-capitalize description-two text-muted">Card Number</label>
+                                                    <input type="number" class="form-control" id="expiry" style="height: 44px;">
+                                                </div>
+                                                <div class="mb-3 d-flex gap-3">
+                                                    <div class="w-100">
+                                                        <label for="expire-date" class="form-label text-capitalize description-two text-muted">Expire Date</label>
+                                                        <input type="text" class="form-control" id="expire-date" style="height: 44px;">
+                                                    </div>
+
+                                                    <div class="w-100">
+                                                        <label for="cvv" class="form-label text-capitalize description-two text-muted">CVV</label>
+                                                        <input type="password" class="form-control" id="cvv" style="height: 44px;">
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+
+                                            <!-- Modal Footer -->
+                                            <div class="modal-footer border-0 justify-content-start">
+                                                <button type="button" class="btn btn-info fw-normal">Add Card</button>
+                                            </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-payment d-flex gap-4">
+                                        <div class="visa-card border">
+                                            <div class="balance d-flex justify-content-between mb-4 align-items-center">
+                                                <h5 class="product-title text-light fs-6 lh-sm mb-0">$95,400.00 USD</h5>
+                                                <div class="dropdown card-edit-dropdown">
+                                                <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="assets/images/Account-images/DotsThree.svg" alt="dots" class="cursor-pointer">
+                                                </button>
+                                                <ul class="dropdown-menu p-2">
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Edit Card</a></li>
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Delete Card</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <p class="text-uppercase description-two text-light mb-2">Card number</p>
+                                            <p class="description-two text-light fs-5 mb-3">****  ****  ****  3814 <img src="assets/images/Account-images/Copy-icon.svg" alt="copy-image"></p>
+                                            <div class="visa-name d-flex align-items-center justify-content-between">
+                                                <img src="assets/images/Account-images/Visa-icon.svg" alt="visa">
+                                                <p class="description-two text-light fs-6">Kevin Walter</p>
+                                            </div>
+                                        </div>
+                                        <div class="master-card border">
+                                            <div class="balance d-flex justify-content-between mb-4 align-items-center">
+                                                <h5 class="product-title text-light fs-6 lh-sm mb-0">$87, 583.00 USD</h5>
+                                                <div class="dropdown card-edit-dropdown">
+                                                <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="assets/images/Account-images/DotsThree.svg" alt="dots" class="cursor-pointer">
+                                                </button>
+                                                <ul class="dropdown-menu p-2">
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Edit Card</a></li>
+                                                    <li><a class="dropdown-item description-two fs-6" href="#">Delete Card</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <p class="text-uppercase description-two text-light mb-2">Card number</p>
+                                            <p class="description-two text-light fs-5 mb-3">****  ****  ****  1761 <img src="assets/images/Account-images/Copy-icon.svg" alt="copy-image"></p>
+                                            <div class="visa-name d-flex align-items-center justify-content-between">
+                                                <img src="assets/images/Account-images/mastercard-image.svg" alt="visa">
+                                                <p class="description-two text-light fs-6">Kevin Walter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
                         <div class="tab-pane fade" id="pane-history" role="tabpanel" aria-labelledby="tab-history">
                             <p>Browsing History content goes here...</p>
                         </div>
                         <div class="tab-pane fade" id="pane-returns" role="tabpanel" aria-labelledby="tab-returns">
                             <p>Return Order content goes here...</p>
                         </div>
-                        <div class="tab-pane fade" id="pane-profile" role="tabpanel" aria-labelledby="tab-profile">
-                            <p>Profile content goes here...</p>
+                        <div class="tab-pane fade show active" id="pane-profile" role="tabpanel" aria-labelledby="tab-profile">
+                            <!--payment-cards-->
+                            <div class="profile-page mb-5">
+                                <div class="card">
+                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                    <p>PERSONAL INFORMATION</p>
+                                </div>
+                                <div class="card-body">
+                                    <!-- upload image file -->
+                                    <div class="user-image-details d-flex justify-content-between flex-wrap gap-3">
+                                        <div class="upload-image">
+                                        <input type="file" id="uploadImage" class="upload-input" accept="image/*">
+
+                                        <!-- Label styled as circular image box -->
+                                        <label for="uploadImage" class="upload-wrapper">
+                                        <img src="assets/images/Account-images/account-user-image.svg" alt="Profile">
+                                        <div class="upload-overlay">
+                                            <img src="assets/images/Account-images/Uploadfile-icon.svg" alt="upload-input">
+                                            <span class="description-one fs-6 text-light">Upload Image</span>
+                                        </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="info-form col-md-9 col-12">
+                                        <div class="name d-flex flex-wrap mb-4 justify-content-between">
+                                            <div class="col-12 col-sm-6">
+                                               <label class="d-block description-two mb-2">First Name <span class="text-danger">*</span></label>
+                                               <input type="text" placeholder="Enter First Name" class="form-control input-responsive">
+                                            </div>
+
+                                           <div class="col-12 col-sm-6">
+                                              <label class="d-block description-two mb-2">Last Name <span class="text-danger">*</span></label>
+                                              <input type="text" placeholder="Enter Last Name" class="form-control input-responsive">
+                                           </div>
+                                        </div>
+
+                                        <div class="email d-flex flex-wrap mb-4 justify-content-between">
+                                            <div class="col-12 col-sm-6">
+                                               <label class="d-block description-two mb-2">Display name  <span class="text-danger">*</span></label>
+                                               <input type="text" placeholder="Enter Display Name" class="form-control input-responsive mb-2">
+                                               <p class="form-info text-muted">This will be how your name will be displayed in the account section and in reviews</p>
+                                            </div>
+
+                                           <div class="col-12 col-sm-6">
+                                              <label class="d-block description-two mb-2">Email address <span class="text-danger">*</span></label>
+                                              <input type="text" placeholder="Enter Email Address" class="form-control input-responsive">
+                                           </div>
+                                        </div>
+
+                                        <div class="email d-flex flex-wrap mb-4 justify-content-between">
+                                            <div class="col-12 col-sm-6">
+                                               <label class="d-block description-two mb-2">Mobile Number</label>
+                                               <input type="text" placeholder="+1-202-555-0118" class="form-control input-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="user-address-form d-flex flex-wrap justify-content-between py-4 border-bottom gap-3">
+                                        <div class="billing-address">
+                                            <div class="card">
+                                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark">
+                                                    BILLING ADDRESS
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="col-12">
+                                                        <label class="d-block description-two mb-2">Address</label>
+                                                        <input type="text" placeholder="Road No. 13/x, House no. 1320/C, Flat No. 5D" class="form-control mb-2">
+                                                    </div>
+
+                                                    <div class="col-12 mb-3">
+                                                        <label class="d-block description-two mb-2">Country</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Bangladesh</option>
+                                                            <option value="india">India</option>
+                                                            <option value="usa">Canada</option>
+                                                            <option value="uk">China</option>
+                                                            <option value="canada">Bangladesh</option>
+                                                            <option value="australia">Australia</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-12 mb-3">
+                                                        <label class="d-block description-two mb-2">City</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Dhaka</option>
+                                                            <option value="india">India</option>
+                                                            <option value="usa">Canada</option>
+                                                            <option value="uk">China</option>
+                                                            <option value="canada">Bangladesh</option>
+                                                            <option value="australia">Australia</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="city-zip d-flex justify-content-between flex-wrap">
+                                                        <div class="col-12 mb-3 col-md-6">
+                                                            <label class="d-block description-two mb-2">City</label>
+                                                            <select class="form-select input-responsive">
+                                                                <option selected disabled>Select</option>
+                                                                <option value="india">Ahmedabad</option>
+                                                                <option value="usa">Bangalore</option>
+                                                                <option value="uk">Hyderabad</option>
+                                                                <option value="canada">Chennai</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-6 gap-2">
+                                                            <label class="d-block description-two mb-2">ZIP Code</label>
+                                                            <input type="text" placeholder="854785" class="form-control input-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="shipping-address">
+                                            <div class="card">
+                                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark">
+                                                    SHIPPING ADDRESS
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="col-12">
+                                                        <label class="d-block description-two mb-2">Address</label>
+                                                        <input type="text" placeholder="Road No. 13/x, House no. 1320/C, Flat No. 5D" class="form-control mb-2">
+                                                    </div>
+
+                                                    <div class="col-12 mb-3">
+                                                        <label class="d-block description-two mb-2">Country</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Bangladesh</option>
+                                                            <option value="india">India</option>
+                                                            <option value="usa">Canada</option>
+                                                            <option value="uk">China</option>
+                                                            <option value="canada">Bangladesh</option>
+                                                            <option value="australia">Australia</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-12 mb-3">
+                                                        <label class="d-block description-two mb-2">City</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Dhaka</option>
+                                                            <option value="india">India</option>
+                                                            <option value="usa">Canada</option>
+                                                            <option value="uk">China</option>
+                                                            <option value="canada">Bangladesh</option>
+                                                            <option value="australia">Australia</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="city-zip d-flex justify-content-between flex-wrap">
+                                                        <div class="col-12 mb-3 col-md-6">
+                                                            <label class="d-block description-two mb-2">City</label>
+                                                            <select class="form-select input-responsive">
+                                                                <option selected disabled>Select</option>
+                                                                <option value="india">Ahmedabad</option>
+                                                                <option value="usa">Bangalore</option>
+                                                                <option value="uk">Hyderabad</option>
+                                                                <option value="canada">Chennai</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-6 gap-2">
+                                                            <label class="d-block description-two mb-2">ZIP Code</label>
+                                                            <input type="text" placeholder="854785" class="form-control input-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="change-password py-4">
+                                        <div class="card">
+                                            <div class="card-header bg-white description-one fs-6 text-uppercase text-dark">
+                                                CHANGE PASSWORD
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label class="d-block description-two mb-2">Current Password</label>
+                                                    <input type="text" placeholder="**********" class="form-control input-responsive">
+                                                </div>
+                                                <div class="change-password d-flex justify-content-between flex-wrap">
+                                                    <div class="new-password col-md-6 col-12">
+                                                        <label class="d-block description-two mb-2">New Password</label>
+                                                        <input type="text" placeholder="**********" class="form-control input-responsive">
+                                                    </div>
+
+                                                    <div class="new-password col-md-6 col-12">
+                                                        <label class="d-block description-two mb-2">Confirm Password</label>
+                                                        <input type="text" placeholder="**********" class="form-control input-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-info">Save Changes</a>
                         </div>
                         <div class="tab-pane fade" id="pane-logout" role="tabpanel" aria-labelledby="tab-logout">
                             <p>Log-out content goes here...</p>
@@ -823,6 +1164,34 @@
         },
         });
 
+        document.addEventListener('DOMContentLoaded', function () {
+        const breadcrumbChild = document.getElementById('breadcrumb-child');
+
+        const breadcrumbMap = {
+            'tab-dashboard': '',
+            'tab-order': 'Order History',
+            'tab-cards': 'Cards & Payment',
+            'tab-history': 'Browsing History',
+            'tab-returns': 'Return Order',
+            'tab-profile': 'Profile',
+            'tab-logout': 'Log-out'
+        };
+
+        document.querySelectorAll('#account-tabs .nav-link').forEach(tabBtn => {
+            tabBtn.addEventListener('shown.bs.tab', function (e) {
+            const tabId = e.target.id;
+            const extraCrumb = breadcrumbMap[tabId];
+
+            if (extraCrumb) {
+                breadcrumbChild.textContent = extraCrumb;
+                breadcrumbChild.classList.remove('d-none');
+            } else {
+                breadcrumbChild.textContent = '';
+                breadcrumbChild.classList.add('d-none');
+            }
+            });
+        });
+        });
 
    </script>
     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
