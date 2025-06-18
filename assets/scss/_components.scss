@@ -1508,6 +1508,114 @@ main
           max-width: 430px;
           width: 100%;
         }
+
+        //order details page style
+        .order-id
+        {
+          border: 1px solid $electric-blue;
+          background: #029FAE0D;
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .order-status
+        {
+          .description-one
+          {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        //activity-image style
+        .order-activity
+        {
+          .activity-image-box {
+            border: 1px solid var(--Green, #029FAE);
+            background: #029FAE0D;
+            padding: 12px;
+            border-radius: 10px;
+            display: inline-block;
+            filter: grayscale(100%) brightness(0.6);
+            transition: filter 0.3s ease;
+          }
+          .activity-image-box:hover {
+            filter: none;
+          }
+
+          .activity-image {
+            filter: brightness(0) saturate(100%);
+          }
+
+          .activity-text {
+            color: #6c757d;
+            transition: color 0.3s ease;
+          }
+          .activitys:hover .activity-text {
+            color: #000;
+          }
+        }
+
+
+        //product list table style
+        .product-list
+        {
+          .heading-two
+          {
+            color: $electric-blue;
+            font-size: 12px;
+            line-height: 16px;
+          }
+          .description-two
+          {
+            font-size: 14px;
+          }
+        }
+
+        //Browsing History page style
+        .product-list-date-wise
+        {
+          .product-img
+            {
+              width: 200px;
+              height: 220px;
+              border-radius: 20px;
+              background: #029FAE0D;
+              position: relative;
+            }
+            .product-info
+            {
+              width: 200px;
+              margin-top: 20px;
+            }
+        }
+
+        //return-order page style
+        .return-order
+        {
+          .nav-link
+          {
+            border: transparent;
+            padding: 0;
+          }
+          .nav-link.active
+          {
+            border-bottom: 2px solid $electric-blue;
+            font-weight: 600;
+          }
+        }
+
+        .product-return-form
+        {
+          .form-control ,select {
+            height: 54px !important;
+          }
+          .upload-image
+          {
+            border: 1px dashed $electric-blue;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }

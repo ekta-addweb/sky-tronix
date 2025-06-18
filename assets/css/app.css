@@ -12538,3 +12538,70 @@ main {
   max-width: 430px;
   width: 100%;
 }
+.manage-account-section .container-xxl .account-row .account-right-col .order-id {
+  border: 1px solid #029FAE;
+  background: rgba(2, 159, 174, 0.0509803922);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-status .description-one {
+  font-size: 12px;
+  line-height: 20px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-activity .activity-image-box {
+  border: 1px solid var(--Green, #029FAE);
+  background: rgba(2, 159, 174, 0.0509803922);
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  filter: grayscale(100%) brightness(0.6);
+  transition: filter 0.3s ease;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-activity .activity-image-box:hover {
+  filter: none;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-activity .activity-image {
+  filter: brightness(0) saturate(100%);
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-activity .activity-text {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .order-activity .activitys:hover .activity-text {
+  color: #000;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-list .heading-two {
+  color: #029FAE;
+  font-size: 12px;
+  line-height: 16px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-list .description-two {
+  font-size: 14px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-list-date-wise .product-img {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px;
+  background: rgba(2, 159, 174, 0.0509803922);
+  position: relative;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-list-date-wise .product-info {
+  width: 200px;
+  margin-top: 20px;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .return-order .nav-link {
+  border: transparent;
+  padding: 0;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .return-order .nav-link.active {
+  border-bottom: 2px solid #029FAE;
+  font-weight: 600;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-return-form .form-control, .manage-account-section .container-xxl .account-row .account-right-col .product-return-form select {
+  height: 54px !important;
+}
+.manage-account-section .container-xxl .account-row .account-right-col .product-return-form .upload-image {
+  border: 1px dashed #029FAE;
+  border-radius: 10px;
+}
