@@ -1620,3 +1620,121 @@ main
     }
   }
 }
+
+/*LOGIN REGISTER 
+  
+                  STYLE
+                  
+                          START*/
+
+.registration-section, .forgot-password {
+  background: rgba(2, 159, 174, 0.1) url('../../../assets/images/login-register-image/log-in-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+
+  .left-side-col
+  {
+    width: 100%;
+    max-width: 648px;
+  }
+  .form-col
+  {
+    padding: 30px;
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+
+    @media #{$brkmx425} {
+      padding: 10px;
+    }
+
+    .nav-link
+    {
+      padding: 10px 100px;
+      border: none;
+      color: $black;
+    }
+    .nav-link.active
+    {
+      background-color: $black;
+      border-radius: 10px;
+      color: $white;
+      font-weight: 600;
+    }
+    .form-control
+    {
+      height: 54px;
+      border-radius: 10px;      
+      border: 1px solid var(--Placeholder, rgba(144, 144, 144, 1))
+    }
+    input:focus
+    {
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(144, 144, 144, 0.4);
+    }
+    .login-divider {
+      border: none;
+      border-top: 1px solid #ccc;
+      height: 1px;
+    }
+
+    .login-box
+    {
+      padding: 16px 0;
+      border-radius: 10px;
+      border: 1px solid var(--Green, rgba(2, 159, 174, 1));
+      width: 100%;
+      max-width: 170px;
+      text-align: center;
+    }
+  }
+  // .right-side-col
+  // {
+  //   width: 100%;
+  //   max-width: 564px;
+
+  //   @media #{$brkmx1200} {
+  //     width: 100%;
+  //     max-width: 400px;
+  //   }
+  // }
+}
+
+/*FORGOT PASSWORD
+ 
+                  STYLE
+                    
+                          START*/
+
+.forgot-password
+{
+  .container-xxl
+  {
+    .form-col
+    {
+      .left-side-col {
+          width: 100%;
+          max-width: 648px;
+          margin: 0 auto;
+      }
+      .heading-two {
+        font-size: 36px;
+        line-height: 47px;
+
+        @media #{$brkmx768} {
+          font-size: 28px;
+          line-height: 38px;
+        }
+
+        @media #{$brkmx576} {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }  
+    }
+  }
+}

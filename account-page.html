@@ -227,7 +227,7 @@
                 </div>
                 <div class="col-12 col-md-9 account-right-col">
                     <div class="tab-content" id="account-tabs-content">
-                        <div class="tab-pane fade " id="pane-dashboard" class="dashboard-page" role="tabpanel" aria-labelledby="tab-dashboard">
+                        <div class="tab-pane fade show active" id="pane-dashboard" class="dashboard-page" role="tabpanel" aria-labelledby="tab-dashboard">
                             <p class="product-title fs-5 mb-2">Hello, Kevin</p>
                             <p class="description-one fs-6 lh-sm mb-3">From your account dashboard, you can easily check & view your <span class="text-primary">Recent Orders</span>, manage your <span class="text-primary">Shipping and Billing Addresses</span> and edit your <span class="text-primary">Password</span> and <span class="text-primary">Account Details.</span></p>
 
@@ -582,8 +582,8 @@
 
                         <div class="tab-pane fade" id="pane-order" role="tabpanel" aria-labelledby="tab-order">
                             <!--recent orders-->
-                            <div class="recent-orders-list border-bottom">
-                                <div class="card">
+                            <div class="recent-orders-list">
+                                <div class="card mb-4">
                                     <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
                                         <p>RECENT ORDERS</p>
                                         <a href="#">View All <i class="fa-solid fa-arrow-right ps-2"></i></a>
@@ -709,7 +709,9 @@
                                             </table>
                                         </div>
                                     </div>
-                                     <!--pagination start-->
+                                </div>
+
+                                  <!--pagination start-->
                                         <nav aria-label="Page navigation example" class="d-flex justify-content-center">
                                         <ul class="pagination justify-content-center custom-pagination">
                                             <li class="page-item">
@@ -729,9 +731,7 @@
                                             </li>
                                         </ul>
                                         </nav>
-
-                                        <!--pagination end-->
-                                </div>
+                                    <!--pagination end-->
                             </div>
                         </div>
 
@@ -1035,10 +1035,10 @@
                             <a href="#" class="btn border p-0 border-0 description-two lh-sm">Show More <i class="fa-solid fa-angle-down"></i></a>
                         </div>
 
-                        <div class="tab-pane fade show active" id="pane-returns" role="tabpanel" aria-labelledby="tab-returns">
+                        <div class="tab-pane fade" id="pane-returns" role="tabpanel" aria-labelledby="tab-returns">
                             <div class="return-order">
                                 <!-- Nav Tabs -->
-                                <ul class="nav nav-tabs border-0 mb-3 d-flex gap-4">
+                                <ul class="nav nav-tabs border-0 mb-4 d-flex gap-4">
                                     <li class="nav-item">
                                         <button class="nav-link pb-2 active bg-transparent description-two fs-5 text-dark" id="return-form-tab" data-bs-toggle="tab" data-bs-target="#return-form" type="button" role="tab">
                                         Product Return Form
@@ -1053,94 +1053,304 @@
 
                                 <!-- Tab Content -->
                                 <div class="tab-content">
-                                <div class="tab-pane fade show active" id="return-form" role="tabpanel">
-                                    <p class="description-one fs-5 text-dark mb-2">Please fill the below form to request a return.</p>
+                                    <div class="tab-pane fade show active" id="return-form" role="tabpanel">
+                                        <p class="description-one fs-5 text-dark mb-2">Please fill the below form to request a return.</p>
 
-                                    <div class="product-return-form">
-                                        <div class="name d-flex flex-wrap mb-4">
-                                            <div class="col-12 col-sm-6 gap-2">
-                                                <label class="d-block description-two mb-2">Order Number <span class="text-danger">*</span></label>
-                                                <input type="text" placeholder="Enter Order Number" class="form-control input-responsive">
-                                            </div>
+                                        <div class="product-return-form">
+                                            <div class="name d-flex flex-wrap mb-4">
+                                                <div class="col-12 col-sm-6 gap-2">
+                                                    <label class="d-block description-two mb-2">Order Number <span class="text-danger">*</span></label>
+                                                    <input type="text" placeholder="Enter Order Number" class="form-control input-responsive">
+                                                </div>
 
-                                            <div class="col-12 col-sm-6">
-                                                <label class="d-block description-two mb-2">Email Address  <span class="text-danger">*</span></label>
-                                                <input type="text" placeholder="Enter email address" class="form-control input-responsive">
-                                            </div>
-                                        </div>
-
-                                        <div class="number-date d-flex flex-wrap mb-4">
-                                            <div class="col-12 col-sm-6 gap-2">
-                                                <label class="d-block description-two mb-2">Phone Number  <span class="text-danger">*</span></label>
-                                                <input type="number" placeholder="Enter Phone Number" class="form-control input-responsive">
-                                            </div>
-
-                                            <div class="col-12 col-sm-6">
-                                                <label class="d-block description-two mb-2">Select Date  <span class="text-danger">*</span></label>
-                                                <input type="date" placeholder="Select Date" class="form-control input-responsive">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="d-flex flex-wrap mb-4">
-                                            <div class="col-12 col-sm-6">
-                                                <label class="d-block description-two mb-2">Reason of Return <span class="text-danger">*</span></label>
-                                                <select class="form-select input-responsive">
-                                                    <option selected disabled>Select an option…</option>
-                                                    <option value="india">Wrong Item Delivered</option>
-                                                    <option value="usa">Product Damaged</option>
-                                                    <option value="uk">Defective Item</option>
-                                                    <option value="canada">Item Not as Described</option>
-                                                    <option value="australia">Received Late</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label class="d-block description-two mb-2">Additional Comments</label>
-                                            <textarea 
-                                                class="form-control" 
-                                                placeholder="Notes About Your Order, e.g. not received the same product" 
-                                                rows="5">
-                                            </textarea>
-                                        </div>
-
-                                        <div class="mb-4">
-                                            <label class="d-block description-two mb-2">Proof of Purchase</label>
-                                            
-                                            <div class="upload-image p-4 text-center position-relative bg-white" style="cursor: pointer;">
-                                                <input type="file" id="fileUpload" class="form-control position-absolute top-0 start-0 w-100 h-100 opacity-0" style="z-index: 2;">
-                                                
-                                                <div style="z-index: 1; position: relative;">
-                                                <p class="mb-1 text-primary description-one fs-6">Choose a file <span class="text-muted">or drop here</span></p>
-                                                <img src="assets/images/Account-images/Upload-icon.svg" alt="upload-image">
+                                                <div class="col-12 col-sm-6">
+                                                    <label class="d-block description-two mb-2">Email Address  <span class="text-danger">*</span></label>
+                                                    <input type="text" placeholder="Enter email address" class="form-control input-responsive">
                                                 </div>
                                             </div>
+
+                                            <div class="number-date d-flex flex-wrap mb-4">
+                                                <div class="col-12 col-sm-6 gap-2">
+                                                    <label class="d-block description-two mb-2">Phone Number  <span class="text-danger">*</span></label>
+                                                    <input type="number" placeholder="Enter Phone Number" class="form-control input-responsive">
+                                                </div>
+
+                                                <div class="col-12 col-sm-6">
+                                                    <label class="d-block description-two mb-2">Select Date  <span class="text-danger">*</span></label>
+                                                    <input type="date" placeholder="Select Date" class="form-control input-responsive">
+                                                </div>
                                             </div>
 
-                                            <!-- Checkbox -->
-                                            <div class="form-check mb-4">
-                                                <input class="form-check-input" type="checkbox" id="agreeCheck">
-                                                <label class="form-check-label description-two" for="agreeCheck">
-                                                    I hereby declare that all provided information is accurate and agree to the return policy.
-                                                </label>
+
+                                            <div class="d-flex flex-wrap mb-4">
+                                                <div class="col-12 col-sm-6">
+                                                    <label class="d-block description-two mb-2">Reason of Return <span class="text-danger">*</span></label>
+                                                    <select class="form-select input-responsive">
+                                                        <option selected disabled>Select an option…</option>
+                                                        <option value="india">Wrong Item Delivered</option>
+                                                        <option value="usa">Product Damaged</option>
+                                                        <option value="uk">Defective Item</option>
+                                                        <option value="canada">Item Not as Described</option>
+                                                        <option value="australia">Received Late</option>
+                                                    </select>
+                                                </div>
                                             </div>
 
-                                            <a href="#" class="btn btn-info">Submit</a>
+                                            <div class="mb-3">
+                                                <label class="d-block description-two mb-2">Additional Comments</label>
+                                                <textarea 
+                                                    class="form-control" 
+                                                    placeholder="Notes About Your Order, e.g. not received the same product" 
+                                                    rows="5">
+                                                </textarea>
+                                            </div>
 
+                                            <div class="mb-4">
+                                                <label class="d-block description-two mb-2">Proof of Purchase</label>
+                                                
+                                                <div class="upload-image p-4 text-center position-relative bg-white" style="cursor: pointer;">
+                                                    <input type="file" id="fileUpload" class="form-control position-absolute top-0 start-0 w-100 h-100 opacity-0" style="z-index: 2;">
+                                                    
+                                                    <div style="z-index: 1; position: relative;">
+                                                    <p class="mb-1 text-primary description-one fs-6">Choose a file <span class="text-muted">or drop here</span></p>
+                                                    <img src="assets/images/Account-images/Upload-icon.svg" alt="upload-image">
+                                                    </div>
+                                                </div>
+                                                </div>
 
+                                                <!-- Checkbox -->
+                                                <div class="form-check mb-4">
+                                                    <input class="form-check-input" type="checkbox" id="agreeCheck">
+                                                    <label class="form-check-label description-two" for="agreeCheck">
+                                                        I hereby declare that all provided information is accurate and agree to the return policy.
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="btn btn-info">Submit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="status" role="tabpanel">
+                                        <div class="return-refund-table" id="table-section">
+                                            <div class="card mb-4">
+                                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark d-flex justify-content-between">
+                                                    <p>RECENT ORDERS</p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead class="border">
+                                                                <tr>
+                                                                    <th scope="col" class="description-one">Order ID</th>
+                                                                    <th scope="col" class="description-one">Status</th>
+                                                                    <th scope="col" class="description-one">Date</th>
+                                                                    <th scope="col" class="description-one">Total</th>
+                                                                    <th scope="col" class="description-one">Action</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody class="border-0">
+                                                                <tr class="description-one">
+                                                                    <td>#96459761</td>
+                                                                    <td class="text-warning">IN PROGRESS</td>
+                                                                    <td>Dec 30, 2019 05:18</td>
+                                                                    <td>$1,500 (5 Products)</td>
+                                                                    <td class="text-muted">
+                                                                        <a href="#" onclick="showDetails()" class="text-muted text-decoration-none">View Details</a>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#71667167</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$80 (11 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#95214362</td>
+                                                                    <td class="text-danger">CANCELED</td>
+                                                                    <td>Mar 20, 2019 23:14</td>
+                                                                    <td>$160 (3 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#71667167</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$80 (1 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#51746385</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$2,300 (2 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#51746385</td>
+                                                                    <td class="text-danger">CANCELED</td>
+                                                                    <td>Dec 30, 2019 07:52</td>
+                                                                    <td>$70 (1 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+                                                                
+                                                                <tr class="description-one">
+                                                                    <td>#673971743</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Dec 7, 2019 23:26</td>
+                                                                    <td>$220 (1 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#95214362</td>
+                                                                    <td class="text-danger">CANCELED</td>
+                                                                    <td>Mar 20, 2019 23:14</td>
+                                                                    <td>$160 (3 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#95214362</td>
+                                                                    <td class="text-danger">CANCELED</td>
+                                                                    <td>Mar 20, 2019 23:14</td>
+                                                                    <td>$160 (3 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#71667167</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$80 (1 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#71667167</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$80 (1 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#51746385</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$2,300 (2 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+
+                                                                <tr class="description-one">
+                                                                    <td>#51746385</td>
+                                                                    <td class="text-success">COMPLETED</td>
+                                                                    <td>Feb 2, 2019 19:28</td>
+                                                                    <td>$2,300 (2 Products)</td>
+                                                                    <td class="text-muted">View Details</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    <!--pagination start-->
+                                            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                                            <ul class="pagination justify-content-center custom-pagination">
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true" class="pagination-icon">&lsaquo;</span>
+                                                </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&rsaquo;</span>
+                                                </a>
+                                                </li>
+                                            </ul>
+                                            </nav>
+                                        <!--pagination end-->
                                     </div>
 
-                                    
-                                </div>
-                                <div class="tab-pane fade" id="status" role="tabpanel">
-                                    <p>Here goes your Return & Refund Status content...</p>
-                                </div>
+                                        <div id="details-section" class="d-none order-activity">
+                                            <div class="card">
+                                                <div class="card-header bg-white description-one fs-6 text-uppercase text-dark border-0">
+                                                    <p class="description-one fs-6 text-dark"><i class="fa-solid fa-arrow-left pe-2" onclick="showTable()"></i>Order Number</p>
+                                                    <p class="fw-bold text-primary ps-3">#96459761</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                        <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-1.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                            <div class="activity-text description-two fs-6">
+                                                                <p>Your order has been successfully returned. The amount will be reflected in your account in 1-2 working days. Thank you for shopping at SkyTronix!</p>
+                                                                <p>23 Jan, 2025 at 7:32 PM</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                        <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-2.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                        <div class="activity-text description-two fs-6">
+                                                            <p>Our delivery man (John Wick) Has picked-up your order for delvery. </p>
+                                                            <p>23 Jan, 2025 at 2:00 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                        <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-3.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                        <div class="activity-text description-two fs-6">
+                                                            <p>Delivery guy has reached at last mile hub.</p>
+                                                            <p>22 Jan, 2025 at 8:00 AM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                        <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-4.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                        <div class="activity-text description-two fs-6">
+                                                            <p>Our staff is on the way to (last mile) hub.</p>
+                                                            <p>21, 2025 at 5:32 AM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                    <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-5.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                        <div class="activity-text description-two fs-6">
+                                                            <p>Your request is successfully verified.</p>
+                                                            <p>20 Jan, 2025 at 7:32 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="activitys d-flex gap-3 align-items-center mb-3">
+                                                        <div class="activity-image-box">
+                                                            <img src="assets/images/Account-images/activity-6.svg" class="activity-image" alt="activity-icon">
+                                                        </div>
+                                                        <div class="activity-text description-two fs-6">
+                                                            <p>Your request has been confirmed.</p>
+                                                            <p>19 Jan, 2025 at 2:61 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    </div>   
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            
                         </div>
-
+                  
                         <div class="tab-pane fade" id="pane-profile" role="tabpanel" aria-labelledby="tab-profile">
                             <!--payment-cards-->
                             <div class="profile-page mb-5">
@@ -1666,6 +1876,18 @@
             });
         });
         });
+
+
+  function showDetails() {
+    document.getElementById('table-section').classList.add('d-none');
+    document.getElementById('details-section').classList.remove('d-none');
+  }
+
+  function showTable() {
+    document.getElementById('details-section').classList.add('d-none');
+    document.getElementById('table-section').classList.remove('d-none');
+  }
+
 
    </script>
     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>

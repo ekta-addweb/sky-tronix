@@ -12605,3 +12605,93 @@ main {
   border: 1px dashed #029FAE;
   border-radius: 10px;
 }
+
+/*LOGIN REGISTER 
+
+                  STYLE
+
+                          START*/
+.registration-section, .forgot-password {
+  background: rgba(2, 159, 174, 0.1) url("../../../assets/images/login-register-image/log-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+.registration-section .left-side-col, .forgot-password .left-side-col {
+  width: 100%;
+  max-width: 648px;
+}
+.registration-section .form-col, .forgot-password .form-col {
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 425.98px) {
+  .registration-section .form-col, .forgot-password .form-col {
+    padding: 10px;
+  }
+}
+.registration-section .form-col .nav-link, .forgot-password .form-col .nav-link {
+  padding: 10px 100px;
+  border: none;
+  color: #000;
+}
+.registration-section .form-col .nav-link.active, .forgot-password .form-col .nav-link.active {
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+.registration-section .form-col .form-control, .forgot-password .form-col .form-control {
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid var(--Placeholder, rgb(144, 144, 144));
+}
+.registration-section .form-col input:focus, .forgot-password .form-col input:focus {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(144, 144, 144, 0.4);
+}
+.registration-section .form-col .login-divider, .forgot-password .form-col .login-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  height: 1px;
+}
+.registration-section .form-col .login-box, .forgot-password .form-col .login-box {
+  padding: 16px 0;
+  border-radius: 10px;
+  border: 1px solid var(--Green, rgb(2, 159, 174));
+  width: 100%;
+  max-width: 170px;
+  text-align: center;
+}
+
+/*FORGOT PASSWORD
+
+                  STYLE
+
+                          START*/
+.forgot-password .container-xxl .form-col .left-side-col {
+  width: 100%;
+  max-width: 648px;
+  margin: 0 auto;
+}
+.forgot-password .container-xxl .form-col .heading-two {
+  font-size: 36px;
+  line-height: 47px;
+}
+@media (max-width: 767.98px) {
+  .forgot-password .container-xxl .form-col .heading-two {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 575.98px) {
+  .forgot-password .container-xxl .form-col .heading-two {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
